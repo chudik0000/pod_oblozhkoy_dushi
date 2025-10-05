@@ -1,0 +1,111 @@
+/* 1. Сброс и Базовые Стили */
+:root {
+    --text-color-light: #000000;
+    --background-color-light: #ffffff;
+    --header-color-light: #f1f1f1;
+
+    /* Цвет берется из темы Telegram при инициализации JS */
+    --main-text: var(--text-color-light); 
+    --main-bg: var(--background-color-light);
+    --header-bg: var(--header-color-light);
+}
+
+/* Настройки для ТЕМНОЙ темы */
+body.dark-mode {
+    --text-color-dark: #f7f7f7;
+    --background-color-dark: #1c1c1d;
+    --header-color-dark: #2c2c2e;
+
+    --main-text: var(--text-color-dark);
+    --main-bg: var(--background-color-dark);
+    --header-bg: var(--header-color-dark);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    /* Базовые стили, которые будут переопределены JS для темной/светлой темы */
+    background-color: var(--main-bg); 
+    color: var(--main-text);
+}
+
+.reader-app {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 2. Шапка книги */
+.book-header {
+    background-color: var(--header-bg);
+    padding: 20px 20px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: sticky; /* Шапка остается при прокрутке */
+    top: 0;
+    z-index: 100;
+}
+
+#bookTitle {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.author-name {
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+/* 3. Контент книги */
+.book-content {
+    padding: 20px;
+    text-align: justify;
+}
+
+.book-content h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.book-content p {
+    margin-bottom: 1.2em;
+    text-indent: 1.5em; /* Красная строка для удобства чтения */
+}
+
+/* 4. Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--header-bg);
+}
+
+.close-button {
+    background-color: #3498db; /* Синий цвет Telegram */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 0.75em;
+    opacity: 0.6;
+}
+
+/* Адаптивность для узких экранов */
+@media (max-width: 600px) {
+    .book-header, .book-content, footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас лжет</h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+                
+</p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="10.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>11/ 78</span></li>
+            <li><a class="nav-list-link" href="12.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>

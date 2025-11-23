@@ -110,7 +110,26 @@ footer {
     }
 }
 .nav-list{
-display: flex;
-background-color: red;
-border: solid 1px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 50px;
+    align-items: center;
+    border: 1px solid #157dec;
+    padding-left: 15px;
+}
+
+.nav-list-link{
+    text-decoration: none;
+    
+}
+.nav-list-numbers{
+    background-color: #157dec;
+    color: #f7f7f7;
+    padding: 10px;
+}
+.title{
+    text-align: center;
 }

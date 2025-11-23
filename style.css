@@ -109,3 +109,8 @@ footer {
         padding-right: 10px;
     }
 }
+.nav-list{
+display: flex;
+background-color: red;
+border: solid 1px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Я шел в бар, готовясь к увольнению, но реальность преподнесла сюрприз. Ванесса Мерримен, потягивая коктейль, сообщила: Джейка в клуб больше не пустят. Мамочки с «маргаритами» пожаловались на его угрозы. Мою задницу спасли те, от кого я меньше всего этого ожидал.</p>
+
+    <p>— Чего тебе надо, Ванесса? — спросил я прямо. — Ты торчишь тут целыми днями одна.
+    <br>— Неужели ты думаешь, что я прихожу ради тебя? — она закатила глаза. — Или ради этого Гэвина? Даже не знаю, кто это.</p>
+
+    <p>Оказалось, Ванесса охотилась за матерью Джейка. Кэтрин Риордан была большой шишкой в <strong>«Конрад и Олсен»</strong> — крупнейшем рекламном агентстве. Ванесса хотела там стажировку, но её план провалился: миссис Риордан, похоже, выперли из компании после реструктуризации.</p>
+
+    <p>— Может, оно и к лучшему, — вздохнула Ванесса. — Репутация у них теперь сомнительная. Это ведь им принадлежит тот <strong>билборд на Кларендон-стрит</strong>, который взломали. Из-за бреши в безопасности они теряют клиентов.</p>
+
+    <p><em class="inner-thought">Я перестал протирать стакан. Мать Джейка работала в агентстве, которому принадлежит ТОТ САМЫЙ билборд? «Не доверяй совпадениям», — как говорит Мейв. Узел затягивается.</em></p>
+
+    <p>Разговор стал неожиданно личным. Ванесса призналась, что ей некуда больше идти — в Бэйвью её почти все ненавидят. И тут я сделал то, чего сам от себя не ожидал.
+    <br>— Слушай... Мне стыдно за то, что я говорил тебе в старших классах. Прости за те грязные намеки в кафетерии, когда все узнали про Купера.</p>
+
+    <p>Ванесса изумленно моргнула:
+    <br>— Ты извиняешься за...</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="36.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>37 / 74</span></li>
+            <li><a class="nav-list-link" href="38.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

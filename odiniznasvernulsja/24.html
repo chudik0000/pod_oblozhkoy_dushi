@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– Хочешь, вместе покормим Стэна? Сегодня в меню сверчки.
+    <br>– Э-э… нет, – усмехаюсь я. – Я только по фруктам, забыл?</p>
+    
+    <p>Мы решаем вернуться в дом через заднюю дверь. Нейт замечает у соседского дома Фила облезлый красный кабриолет с коричневым верхом.</p>
+    
+    <p>– Погоди, – я присматриваюсь к машине. – Очень похожий драндулет я видела возле офиса Эли. Купер еще шутил, что внутри явно не Джейк, раз это такая рухлядь. И стекла наглухо затонированы.</p>
+    
+    <p>Внезапно выходит сосед Фил в банном халате и ворчит, чтобы друзья Нейта не занимали его место. Нейт шагает к машине, но та резко срывается с места, окутав нас выхлопными газами. <strong>Номера заляпаны грязью.</strong></p>
+
+    <p>У Нейта звонит телефон — «MMMBop» группы Hanson.
+    <br>– Это всё Мейв, шутка года! – оправдывается он, но тут же серьезнеет. – В чем дело, пап? Почему?.. Ладно. Буду через пять минут.</p>
+    
+    <p>– Отец из-за чего-то распсиховался, – говорит Нейт. – Не против, если мы ненадолго прокатимся в «Бэйвью-Хай»?</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 12. Эдди</h2>
+    <p class="date" style="text-align: center;">Воскресенье, 5 июля</p>
+
+    <p>Парковка «Бэйвью-Хай» возвращает меня в прошлое, когда я была «принцессой школы», вечно боявшейся, что я недостаточно хороша. Мы с Нейтом идем к сараю с инвентарем за бейсбольным полем, где его ждет отец.</p>
+    
+    <p>– Джейк, – выдыхаю я, и сердце уходит в пятки.</p>
+    
+    <p>Худшее привидение материализовалось. <strong>Джейк Риордан</strong> стоит у домашней базы в спортивной форме. Рядом с ним — крупный мужчина, надзиратель. Нейт в ужасе:
+    <br>– Черт! Я идиот! Отец предупреждал, что он тут тренируется. Пойдем обратно, Эдди.</p>
+    
+    <p>– Нет, – отвечаю я.</p>
+    
+    <p>Мы смотрим друг другу в глаза. Кровь стучит в ушах, перед глазами черные точки, но на смену слабости приходит странное, холодное спокойствие. Я больше не та испуганная девочка.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="23.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>24 / 74</span></li>
+            <li><a class="nav-list-link" href="25.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

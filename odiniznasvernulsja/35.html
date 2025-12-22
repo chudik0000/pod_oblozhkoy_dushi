@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Автосалон «Мэнделей» сверкает так, что больно глазам. Пока Луис в восторге носится между машинами, а Купер впадает в ступор от ценников, мы с Мейв плетемся позади.</p>
+
+    <p>— Фиби, — вдруг говорит Мейв, — я должна извиниться. За то фото с Джейком. Если бы я не показала его всем сразу, ты бы не напилась на вечеринке и всего этого бы не случилось.</p>
+    
+    <p>Внутри всё переворачивается. Мейв права — ложь рождается из страха. Но как признаться в том, чего стыдишься больше всего?
+    <br>— Зачем ты на самом деле ездила в «Истленд-Хай» к Джейку? — мягко спрашивает она. — Друзья нужны, чтобы делиться самым страшным.</p>
+
+    <p><em class="inner-thought">Я чуть не сорвалась. Почти рассказала ей про Оуэна и Эмму. Но Луис прервал нас криком о тест-драйве «Ламборгини», и я снова спряталась за привычным «я просто беспокоилась за Эдди».</em></p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 20. Фиби</h2>
+    <p class="date" style="text-align: center;">Четверг, 9 июля</p>
+
+    <p>Купер так ничего и не купил — цены в «Мэнделее» оказались космическими даже для звезды рекламы. После смены в кафе, отработав на автопилоте, я поехала не домой, а к Ноксу. Пятнадцать минут я сидела в машине, глядя на его окно, прежде чем решиться.</p>
+
+    <p>Я забралась к нему через окно, как в старые добрые времена.
+    <br>— Я думал, оконные вылазки в прошлом, — Нокс улыбнулся, но в его глазах читалось замешательство. После того как он попросил «дистанцию», я всегда заходила через дверь.</p>
+
+    <p>— Мне нужно поговорить, — я села на край стула, чувствуя, как дрожат руки. — Твоим родителям лучше не знать. И вообще — поклянись, что это останется только между нами.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="34.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>35 / 74</span></li>
+            <li><a class="nav-list-link" href="36.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

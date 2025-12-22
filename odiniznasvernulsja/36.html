@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Клянусь, — говорит Нокс, садясь напротив меня. — Что случилось?</p>
+
+    <p>Я начинаю издалека — с того самого свидания, на которое не пошла. Признаюсь, что хотела сказать «да», и вижу его застенчивую улыбку. Но я здесь не для романтики. Я пришла разрушить всё.</p>
+
+    <p>И я рассказываю. В мельчайших, уродливых деталях: <strong>что сделал Оуэн</strong> и как мы с Эммой его покрывали. Как он стал инструментом в игре «Правда или Вызов». Я говорю отрешенно, терзая в руках канцелярскую скрепку, пока сердце колотится где-то в горле.</p>
+
+    <p>— Ничего себе, — наконец произносит Нокс. Его колени касаются моих. — Знаешь, ради сестер я бы и труп спрятал. Я понимаю, почему ты так поступила. Хорошо, что ты решила рассказать всем...</p>
+
+    <p>— Всем?! — я холодею. — Я рассказала только тебе!</p>
+
+    <p>— Но Фиби, этот цикл мести не остановится, пока не вскроется правда, — тихо говорит он. — Саймон, Джейк, Джаред, Эмма... А теперь Оуэн. Ты не думала, что тебя похитили именно из-за него? Что кто-то <strong>уже</strong> знает?</p>
+
+    <p>Мы спорим до хрипоты. Нокс настаивает, что молчание убивает Оуэна изнутри грузом вины, а я кричу, что он всего лишь ребенок. В комнату заглядывает мама Нокса, привлеченная шумом.
+    <br>— Простите, мне пора, — я выскакиваю из комнаты, так и не выпустив из окровавленного пальца истерзанную скрепку. Стало только хуже. Теперь Нокс знает меня настоящую, и этот взгляд мне не нравится.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 21. Нейт</h2>
+    <p class="date" style="text-align: center;">Пятница, 10 июля</p>
+
+    <p>Прошлую ночь я провел со своей никуда-не-исчезнувшей девушкой. После того безумия в лесу и угроз Джейка это была лучшая ночь за долгое время. Она примирила меня с реальностью, хотя тень Риордана всё еще маячит где-то на периферии.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="35.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>36 / 74</span></li>
+            <li><a class="nav-list-link" href="37.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

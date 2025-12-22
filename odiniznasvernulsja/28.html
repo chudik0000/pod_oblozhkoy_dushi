@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– Нет! – восклицает Бронвин, и за столом воцаряется хаос.
+    <br>– Он бы не смог! – перекрикивает Мейв. – У него браслет на лодыжке!</p>
+
+    <p>– Ему разрешают быть в школе, – парирует Эдди. – И он видел ту красную машину. Он точно знает, где сарай. Если у Джейка есть хоть один сообразительный приятель, он мог обмануть систему слежения. Фиби, ты видела на вечеринке что-то подозрительное?</p>
+
+    <p>Я краснею. Снова это чувство: я не властна над своей жизнью. Рассказать про Оуэна? Но Эмма просила ничего не предпринимать до её приезда.
+    <br>– Я помню обои, – тихо говорю я. – Зеленые, с узором из плюща. Очнулась на миг, увидела их и снова провалилась.</p>
+
+    <p>Эдди бледнеет так, что проступают веснушки.
+    <br>– Плющ! Зеленый фон! Купер, ты помнишь? Веранда в «Рамона-хаус»! Этот дом принадлежит семье Джейка.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Саймон</h2>
+    <p class="date" style="text-align: center;">Шесть лет назад</p>
+
+    <p>По мнению Саймона, загородный дом Джейка был безвкусным и помпезным. Пока хозяева уехали, а Джейк спал, Саймон достал блокнот. Страница <strong>«Кого я ненавижу»</strong>.</p>
+    
+    <p>Недавно он вписал туда <strong>Бронвин Рохас</strong>: «Подхалимка. Противный голос. Зубрилка». Но сегодня его целью был другой человек. Он открыл чистую страницу и вывел:</p>
+    
+    <blockquote>
+        <strong>Джейк Риордан.</strong><br>
+        Паршиво играет на приставке.<br>
+        Смотрит реалити-шоу.<br>
+        Пялится в зеркало.<br>
+        Позер.
+    </blockquote>
+
+    <p>Саймон долго царапал бумагу ручкой. Его раздражение на старого приятеля росло. Он встал раньше обычного и вышел погулять по огромному участку Риорданов, пиная камни от скуки, пока не услышал голоса.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="27.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>28 / 74</span></li>
+            <li><a class="nav-list-link" href="29.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– К тому же убивают в основном женщины. Ты оценишь.</p>
+    <p>Бронвин нежно целует меня, и мрачные мысли испаряются. Наши тела сливаются в единое целое, словно детали мозаики. Я толкаю ее на подушки, но Бронвин, смеясь, отстраняется:
+    <br>– Только не здесь. Вдруг кто-то из твоих соседей вернется?</p>
+    
+    <p>– Тогда идем в мою комнату?
+    <br>– Через десять минут мне надо встретиться с Мейв.</p>
+
+    <p>Не успеваем мы пошевелиться, как в дверь звонят. Я ожидаю увидеть курьера, но на пороге стоит мой отец, <strong>Патрик</strong>.</p>
+    
+    <p>– Здравствуй, Нейт. Мне привезли твой порошок для ящериц. Я все равно шел на работу.</p>
+
+    <p>Я впускаю его. Отец завязал, но я до сих пор машинально проверяю его пальцы — нет ли дрожи. Мать съехала в отдельную квартиру, и теперь он живет один. Бронвин подходит к нам, и ее волосы уже гладко зачесаны в хвост.</p>
+
+    <p>– Здравствуй, Бронвин! Рад тебя видеть.
+    <br>– Взаимно, Патрик. Может, мы с Нейтом как-нибудь заедем к вам, приготовим ужин?</p>
+
+    <p>Моя девушка в миллион раз лучше меня. Глядя на улыбающегося отца, я снова замечаю, как сильно мы похожи. Мы договариваемся на среду, но тут отец замирает:</p>
+    <p>– Послушай, Нейт… ты точно не забрал по ошибке мои ключи? Рабочие ключи. Они как сквозь землю провалились!</p>
+
+    <p>Отец работает подсобным рабочим в <strong>«Бэйвью-Хай»</strong>, и это место ему жизненно необходимо. Я начинаю беспокоиться, но Бронвин ободряюще берет меня под руку: <em class="emphasis">«Решай проблемы по мере поступления»</em>.</p>
+
+    <p>– Не стоит тебе сегодня заходить в школу, Нейт, – внезапно говорит отец, оттягивая резиновый браслет на запястье. – Да и завтра… и еще какое-то время…</p>
+    
+    <p>– Это еще почему?</p>
+    <p>– Понимаешь, в школе иногда тренируется… тот парень. Со своим инспектором по надзору.</p>
+
+    <p>Бронвин бледнеет, вцепившись мне в руку:
+    <br>– <strong>Джейк Риордан?</strong> Это точно он? Как его вообще подпустили к школе?</p>
+    
+    <p>– Он самый, – подтверждает отец. – Видел его на спортивном поле.</p>
+
+    <p>- Думаю, суд разрешил ему небольшие пробежки на стадионе.&nbsp;– Увидев в моем взгляде изумление и отвращение, отец поспешно добавляет:&nbsp;– В саму школу его, конечно, не пускают.</p>
+</div>
+
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="14.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>15 / 74</span></li>
+            <li><a class="nav-list-link" href="16.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

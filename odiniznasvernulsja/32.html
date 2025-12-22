@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– И где ты будешь их искать? – спрашивает Мейв.
+    <br>– У меня идея, – голос Эдди звучит решительно. – Поедем в Рамону, в загородный дом Джейка. Помните те зеленые обои с плющом? Если Фиби была там, то и Бронвин может быть там же.</p>
+    <p>– Скинь адрес, – требует Нейт, уже заводя мотоцикл.</p>
+    <p>– Нет, Нейт. Ты в таком состоянии разобьешься. Мы едем вместе.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 17. Эдди</h2>
+    <p class="date" style="text-align: center;">Среда, 8 июля</p>
+
+    <p>Я гоню машину по шоссе под аккомпанемент споров Мейв о том, что снежная лопата — отличное оружие. Нейт молчит, и это пугает сильнее всего. Он сжимает телефон так, будто это единственная нить, связывающая его с Бронвин.</p>
+
+    <p>Мы почти в Рамоне. Сердце колотится. Что мы будем делать, если встретим там Джейка? Но в этот момент телефон Нейта взрывается мелодией «MMMBop». 
+    <br>– Незнакомый номер, — шепчет он.</p>
+    <p>– Это наш домашний! – взвизгивает Мейв. – Отвечай!</p>
+
+    <p>– Нейт, мне так жаль! – раздается из динамика голос Бронвин. В машине воцаряется хаос: слезы, смех и бесконечное повторение её имени.</p>
+
+    <p>Мы тормозим на заправке, чтобы выслушать её невероятную историю. Оказывается, Бронвин решила собрать малину для десерта, забрела в лесную глушь, <strong>уронила телефон в реку и подвернула ногу</strong>.
+    <br>– Я скакала на одной ноге до машины целую вечность, — кается она. — А потом застряла в пробке. И я не помню ни одного вашего номера наизусть! Позвонила, как только добралась до домашнего телефона.</p>
+
+    <p><em class="inner-thought">Это так в стиле Бронвин — быть гением в учебе и абсолютно беспомощной в лесу. Мы едва не развязали войну с Джейком из-за куста малины. Но облегчение, которое мы чувствуем, невозможно описать словами.</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="31.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>32 / 74</span></li>
+            <li><a class="nav-list-link" href="33.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

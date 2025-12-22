@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– Ты это сделал! – весело отмечает Кристал, подцепив пальцем прядь Нокса. – Отрастил волосы! Сказала, что станешь красавчиком – и оказалась права!</p>
+    
+    <p>Я энергично киваю, стараясь скрыть ревность. Нокс выглядит растерянным и польщенным одновременно.
+    <br>– Официально объявляю тебя красавчиком! – Кристал смахивает соринку с его рубашки. – Кстати, сколько тебе лет?</p>
+    
+    <p>– Семнадцать.
+    <br>– Эх, совсем зеленый. Поговорим через пару лет.</p>
+
+    <p>– Ты и глазом не моргнешь – а мне уже восемнадцать! – выкрикивает Нокс ей вслед.
+    <br>– Ты на нее запал? – усмехается Эдди.
+    <br>– Это вряд ли. Не мой типаж.</p>
+
+    <p>Пока я глушу ревность пуншем, появляются <strong>Мейв и Луис</strong>. Эдди тут же набрасывается на них с вопросами о форуме мстителей.</p>
+    
+    <p>– Почти шесть часов прошло! Ты что-нибудь нашла?
+    <br>– Я только начала, – бурчит Мейв. Она кажется непривычно скованной.</p>
+
+    <p>Луис уходит за напитками, а Нокс подозрительно косится на мою пустую кружку. Но внимание всех переключается на Мейв, которая достает телефон.</p>
+    
+    <p>– Вы в курсе, что в «Инстаграме» есть аккаунт, посвященный перемещениям <strong>Джейка</strong>? – спрашивает она. – И вот... это ведь твоя машина, Фиби? И твои кроссовки?</p>
+
+    <p>Она поворачивает экран. Там фото: <strong>Джейк Риордан помогает мне с колесом</strong>. Мои розовые «найки», номер машины — всё как на ладони. У меня перехватывает дыхание.</p>
+
+    <p>– Я… я все объясню, – запинаюсь я.
+    <br>– Ты… позволила ему… – Эдди в ужасе таращится на меня.</p>
+    
+    <p>– А почему не позвонила мне? – допытывается Нокс.</p>
+
+    <p>Я пытаюсь оправдаться, несу чушь про случайную встречу и его мать, но ледяной тон Эдди не оставляет шансов.
+    <br>– Три дня назад! Мы вчера весь день работали вместе, а ты молчала! – возмущается Эдди.</p>
+    
+    <p>– Прости... Я даже не хотела его благодарить...
+    <br>– Ну надо же – не хотела! – саркастично выплевывает Эдди.</p>
+
+    <p>Мейв закусывает губу и добивает меня следующим вопросом:
+    <br>– Это ведь была ты, Фиби? На встрече Джейка с учениками «Истленд-Хай». Не какая-то другая девчонка с твоей прической и в твоем топе.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="17.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>18 / 74</span></li>
+            <li><a class="nav-list-link" href="19.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

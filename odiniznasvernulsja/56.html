@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+ <div class="chapter-text">
+    <p>— Психопатка! — выдыхает Мейв, впившись глазами в экран. — Она ворует чужую жизнь.
+    <br>Настоящая Челси Элтон не учится в Оксфорде. Девушка под ником @sophiehh13 только что вскрыла ложь: Челси использует её фотографии, чтобы создать иллюзию своего присутствия в Англии. 
+    <br>— Если она не в Оксфорде, — шепчу я, чувствуя, как по спине ползет холодок, — значит, она всё это время была здесь. В Бэйвью. Или где-то очень близко.</p>
+
+    <hr style="border: 1px solid #ccc;">
+
+    <h2 style="text-align: center;">Саймон</h2>
+    <p class="date" style="text-align: center;">Шесть лет назад</p>
+
+    <p>Джейк Риордан всегда был предсказуем. Когда его идеальный мир дал трещину, он прибежал к единственному человеку, который коллекционировал чужие грехи. Ко мне.
+    <br>— Александр Элтон, — я показал ему экран телефона. — Директор в агентстве твоей матери. Она пакует чемоданы, Джейк. Собирается уйти к нему.</p>
+
+    <p>Лицо Джейка пошло красными пятнами. 
+    <br>— Мой отец идеален! Она не променяет его на этого... козла из конуры!
+    <br>Но семя сомнения уже проросло. Пять минут спустя мы уже крутили педали к дому Элтонов. Джейк дрожал от страха, а я... я наслаждался. Секреты — это валюта, и сегодня я собирался сорвать банк.</p>
+
+    <p>Красной «БМВ» миссис Риордан во дворе не оказалось, но дом стоял особняком, скрытый от глаз соседей. Идеальное место для тайн. Пока Джейк топтался на тротуаре, я решил осмотреться. 
+    <br>— Эй, ты кто такой? — резкий голос заставил меня обернуться.</p>
+
+    <p>Из гамака между деревьями выбралась девчонка. Челси Элтон. Ей было шестнадцать, и в её взгляде не было ни капли дружелюбия. 
+    <br>— Я Саймон Келлехер. Живу на этой улице, — соврал я, не моргнув и глазом. — Думал, тут можно срезать путь. 
+    <br>— Здесь некуда резать путь, — отрезала она, подходя ближе. — Я тебя впервые вижу.</p>
+
+    <p><em class="inner-thought">Она смотрела на меня так, будто видела насквозь. Тогда я еще не знал, что эта встреча — не просто эпизод в моем расследовании. Челси Элтон не была похожа на хрупкую жертву семейной драмы. Она была охотником, защищавшим свою территорию.</em></p>
+
+    <hr style="border: 1px solid #ccc;">
+
+    <p>— Твоя мать... она дома? — подал голос Джейк, наконец решившись подойти. 
+    <br>Челси перевела взгляд на него, и на её губах заиграла странная, почти пугающая улыбка. 
+    <br>— Дома только я и ненависть, — ответила она. — Хотите зайти и посмотреть?</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="55.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>56 / 74</span></li>
+            <li><a class="nav-list-link" href="57.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

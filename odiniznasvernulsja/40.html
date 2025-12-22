@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Нам с тобой спешить некуда, — улыбается Кили с экрана. — Мне понравилось с тобой целоваться, но ты — какая есть — мне нравишься еще больше. Так что давай общаться как раньше, а там видно будет. И не пугайся так, когда я хочу прилететь.</p>
+    <p>Я чувствую, как «первобытный мозг», вечно ожидающий удара, наконец затихает. Кили понимает. Она не Джейк, она не будет давить. 
+    <br>— Надень тиару на вечеринку, королева, — подмигивает она на прощание. — Ты заслужила.</p>
+
+    <p>Я вылетаю из комнаты в непривычно хорошем настроении, едва не сбив маму с ног.
+    <br>— Если у вас с ней что-то серьезное, — кричит она мне вслед, когда я уже открываю дверь машины Луиса, — то ей чертовски повезло!</p>
+    <p>Я замираю. Мама только что... сделала мне комплимент? Без подтекста? Без критики? Кажется, это лето способно удивлять не только кошмарами.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 24. Эдди</h2>
+    <p class="date" style="text-align: center;">Вторник, 14 июля</p>
+
+    <p>Мы собрались в медиакомнате Рохасов. Команда Бэйвью в полном составе, включая Нокса, Фиби и Криса. Атмосфера тяжелая, праздником и не пахнет.</p>
+
+    <p>— <strong>«Практика ведет к совершенству»</strong>, — чеканит Мейв, глядя в ноутбук. — На руке Фиби — «ПРАКТИКА». У Регги — «ВЕДЕТ». Следующим словом явно будет «К» или «СОВЕРШЕНСТВУ».</p>
+
+    <p>— Джейк упоминал «практику» в баре, — напоминаю я, глядя на Фиби. Она сидит между Купером и Крисом, бледная и притихшая. После того как Регги нашли в раздевалке (слава богу, живым, хоть и с сотрясением), всё стало слишком реально.</p>
+
+    <p>— Но зачем ему Фиби? — возражает Бронвин, стараясь увести разговор от моей паранойи по поводу бывшего. — И как он мог всё это провернуть, находясь под домашним арестом? Если это не он, то кто-то очень хочет, чтобы мы думали на него. Кто-то, кто знает фразу «Практика ведет к совершенству» так же хорошо, как и мы.</p>
+
+    <p><em class="inner-thought">Мы смотрим друг на друга. В этой комнате собрались лучшие умы Бэйвью, но мы всё еще на шаг позади. Мы ждем третьего слова, понимая, что оно может быть написано на ком-то из нас.</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="39.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>40 / 74</span></li>
+            <li><a class="nav-list-link" href="41.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

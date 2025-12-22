@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– Не удивлюсь, если и туда пустят, – едко замечаю я.</p>
+    <p>Как ни старайся выкинуть ублюдков вроде Регги и Джейка из головы, они все равно о себе напомнят. Потому что люди развязывают им руки.</p>
+    
+    <p>– Да уж… – Отец вновь щелкает резинкой на запястье. – Знаю, когда все начиналось, я не особо вникал в происходящее, но… Мне не нравится, что этот парень там ошивается. Что он вообще на свободе, если честно.</p>
+    
+    <p><em class="inner-thought">Чем дольше Джейк будет разгуливать по улицам Бэйвью, как самый обычный горожанин, тем больше людей поверят, что так оно и есть. И будущий беспристрастный судебный процесс может принять неожиданный оборот.</em></p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 7. Эдди</h2>
+    <p class="date" style="text-align: center;">Суббота, 4 июля</p>
+
+    <p>Бывают расслабленные субботы, а бывают как эта – поход в Бэйвью-молл с беременной сестрой и матерью. Мама уговаривает Эштон купить колыбель за три тысячи долларов в бутике <strong>Le Petit Ange</strong>.</p>
+    
+    <p>– Она похожа на мини-солярий, – замечает Эштон.
+    <br>– Или на огромную салатницу, – добавляю я.</p>
+
+    <p>Мама, выглядящая как модель на подиуме, сетует на наше отсутствие вкуса и уходит смотреть детские стульчики.
+    <br>– Мне не хватило духу ей сказать, что мы берем подержанную колыбельку у родственников Эли, – признается сестра.</p>
+    
+    <p>– Кстати, о юристах… – начинаю я.</p>
+    
+    <p>Эштон сразу понимает: я спрашиваю о новостях про <strong>Джейка</strong>. Я старательно избегаю мест, где он может появиться.
+    <br>– По крайней мере, ничего нового о нем. Но Эли кое-что беспокоит… Помнишь билборд на Кларендон-стрит? Про новую игру?</p>
+    
+    <p>– Помню, конечно.
+    <br>– Выяснилось, что <strong>билборд хакнули!</strong> Рекламная компания не имеет к этому отношения. Кто-то взломал систему. Эли боится, как бы это не оказался кто-то с форума мстителей. Последователь Джареда.</p>
+    
+    <p>У меня екает сердце. Форум <strong>«Я мститель»</strong> был рассадником фанатов Саймона Келлехера. Именно там Джаред планировал свои нападения. Я смотрю на живот Эштон, и она инстинктивно прикрывает его рукой.</p>
+    
+    <p>– Мужу никто не угрожает, но он переволновался. Даже собрал в офисе оперативную группу, чтобы расследовать это дело.</p>
+    
+    <p>– Как именно расследовать? Форум мстителей ведь заблокировали.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="15.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>16 / 74</span></li>
+            <li><a class="nav-list-link" href="17.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

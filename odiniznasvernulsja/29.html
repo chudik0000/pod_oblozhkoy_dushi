@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– С каких это пор такие, как мы, водятся со всякими келлехерами? — голос Скотта Риордана доносился с тренировочной площадки. — Есть что-то пугающее в этом мальчишке, помяни мое слово.</p>
+    <p>– Да знаю я, пап, — буркнул Джейк. — Ты всегда прав.</p>
+
+    <p>Саймон, притаившись в гостевой спальне с зелеными обоями в плющ, старательно заносил в блокнот: <strong>«Папенькин сынок»</strong>. Ему было плевать на мнение Риордана-старшего, но предательство Джейка жалило. 
+    <br>Вскоре он подслушал и ссору родителей Джейка. Мистер Риордан обвинял жену в том, что она помешана на работе и плюет на семью. Кэтрин Риордан лишь холодно огрызнулась, а когда муж ушел, защебетала в трубку кому-то другому: «Жду не дождусь встречи!»</p>
+
+    <p><em class="inner-thought">Мама Джейка любит свою работу (или кого-то на работе) гораздо больше, чем мужа, — сделал вывод Саймон, наблюдая за ней с балкона.</em></p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 15. Нейт</h2>
+    <p class="date" style="text-align: center;">Среда, 8 июля</p>
+
+    <p>Работать в Загородном клубе Бэйвью — значит видеть людей без их масок. Я наблюдаю за <strong>миссис Риордан</strong>: как только её партнер по теннису уходит, она роняет фальшивую улыбку и устало трет виски. За ней, в свою очередь, украдкой подглядывает <strong>Ванесса</strong>. Она выглядит непривычно неуверенной.</p>
+
+    <p><em class="inner-thought">Неужели Ванесса — одна из тех десятков людей, что пишут Джейку в тюрьму?</em></p>
+
+    <p>– Я думал, ты только на свою девушку так пялишься, — Гэвин, дежурный бармен, толкает меня локтем.
+    <br>– Ни на кого я не пялюсь. Просто завис.
+    <br>– Ну-ну. Слушай, а Ванесса свободна? Я бы с ней замутил.</p>
+
+    <p>– Понятия не имею, — отрезаю я. Гэвин приглаживает волосы, а я мечтаю, чтобы мои полчаса смены скорее закончились. У меня есть дела поважнее: мы с Бронвин обещали приготовить ужин для моего отца.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="28.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>29 / 74</span></li>
+            <li><a class="nav-list-link" href="30.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

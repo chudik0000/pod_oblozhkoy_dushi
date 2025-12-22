@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Я очнулась вся в пыли. Ремень, завязанный узлом, не тронут — это утешало, но не отменяло того, что меня накачали рогипнолом и бросили в сарае. Я отдраила руку дочиста, но мне всё еще чудятся очертания надписи: <strong>ПРАКТИКА</strong>.</p>
+
+    <p><em class="inner-thought">Кто-то поднес телефон к моему лицу, чтобы разблокировать его по FaceID, и написал маме безупречное сообщение без опечаток. Этот человек знал моих друзей и знал, как выиграть время.</em></p>
+
+    <p>– Ты проехал мимо, – замечаю я, когда Купер пропускает поворот к кафе.
+    <br>– Знаю. Сначала я хочу отвезти тебя в другое место.</p>
+
+    <p>Мы оказываемся на безлюдной стоянке у старой автомастерской. Перед нами — ржавый остов машины без колес и бамперов. Купер достает из багажника тяжелую кувалду.
+    <br>– Когда мне было совсем плохо, Луис привел меня сюда. Сказал бить по машине, пока не полегчает. Помогает.</p>
+
+    <p>Купер протягивает мне рукоять. 
+    <br>– Бабуля сказала: «Фиби мне ничего не рассказывала, но я-то вижу, что ей нелегко». Если нужно выместить злобу — держи.</p>
+
+    <p>Я замахиваюсь. Удар! За смерть отца. Удар! За игру «Правда или Вызов». Удар! За Брэндона и за бомбу Джареда. За то, что я оттолкнула Нокса и Мейв. За проклятый сарай!</p>
+
+    <p>Я колочу по металлу, пока не начинаю задыхаться. Когда я останавливаюсь, ржавая колымага искорежена до неузнаваемости.
+    <br>– Спасибо, Купер. Мне это было нужно.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 14. Фиби</h2>
+    <p class="date" style="text-align: center;">Вторник, 7 июля</p>
+
+    <p>Мы поднимаемся на веранду «Контиго». Здесь вся банда, кроме Нейта. Все те, чьи звонки я игнорировала два дня. Иви разносит напитки и сочувственно хлопает меня по плечу.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="25.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>26 / 74</span></li>
+            <li><a class="nav-list-link" href="27.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

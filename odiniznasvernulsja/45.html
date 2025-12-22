@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Я узнала много нового, — пробормотала я, выходя из офиса. В заметках телефона значилось: <em>«Чейз Элтон — блатной сынок / Алекс Элтон утонул / Интрижка с мамой Джейка»</em>. Пазл не просто складывался, он начинал жечь руки.</p>
+
+    <hr style="border: 1px solid #ccc;">
+
+    <h2 style="text-align: center;">Джейк</h2>
+    <p class="date" style="text-align: center;">Шесть лет назад</p>
+
+    <p>— Когда-нибудь все это станет твоим, — Скотт Риордан обвел рукой роскошный двор с бассейном. — Но тебе нужна правильная девушка, Джейк. Заботливая. Которая будет радоваться твоим успехам, а не соревноваться с тобой, как твоя мать.</p>
+    <p>Джейк кивнул, но его не покидало предчувствие беды. Родители едва разговаривали. Подойдя к дому, он услышал приоткрытую дверь и голос матери:
+    <br>— Это непросто, Алекс. Ты даже не представляешь как. Я тоже этого хочу! Больше всего на свете! Но как быть с Джейком...</p>
+    <p>Отец Джейка, Скотт, явно слышал это, но не подал виду. Он лишь чуть заметно улыбался, глядя вслед жене, уходящей на кухню. В его глазах Джейк впервые увидел то, что позже узнает в зеркале: <strong>ледяную, всепоглощающую ярость</strong>.</p>
+
+    <hr style="border: 1px solid #ccc;">
+
+    <h2 style="text-align: center;">Глава 26. Нейт</h2>
+    <p class="date" style="text-align: center;">Суббота, 18 июля</p>
+
+    <p>Квартира моей матери — стерильный выставочный зал мебельного магазина. Бронвин чувствует себя здесь как дома, обсуждая Йель, а я пытаюсь понять, зачем мама на самом деле нас пригласила. Она говорит о работе в офисе, о делах, но её пальцы нервно постукивают по стакану с минералкой.</p>
+
+    <p>— Что нового, ма? — спрашиваю я прямо. Мы не виделись несколько недель, и я слишком хорошо знаю этот тон «у меня всё под контролем».</p>
+
+    <p><em class="inner-thought">Шесть лет назад Алекс Элтон «случайно» утонул. Шесть лет назад в семье Риорданов начался раскол из-за измены Кэтрин. И именно тогда её муж Скотт смотрел на неё взглядом убийцы. Может, Джейк не сам стал монстром? Может, он просто прилежный ученик своего отца?</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="44.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>45 / 74</span></li>
+            <li><a class="nav-list-link" href="46.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

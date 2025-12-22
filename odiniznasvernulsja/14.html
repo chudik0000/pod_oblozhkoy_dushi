@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Джейк пришел к выводу, что безопаснее отгородиться. Ведь если ты ничего не видишь и не слышишь, то и беспокоиться не о чем.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 6. Нейт</h2>
+    <p class="date" style="text-align: center;">Пятница, 3 июля</p>
+
+    <p>– Кто за? – спрашивает Сана.</p>
+    <p>Все мои соседи поднимают руки. Сана, возомнившая себя главной по дому, глядит на меня, а следом – на <strong>Бронвин</strong>, что примостилась рядом со мной на диване.</p>
+    <p>– Ты здесь не живешь, Бронвин. А значит, не имеешь права голоса.
+    <br>– И все равно я против, – с вызовом говорит она.</p>
+
+    <p>– Решение принято. Ходатайство с просьбой оставить <strong>Регги Кроули</strong> в нашем доме удовлетворено.</p>
+
+    <p>В прошлые выходные я застукал этого негодяя Регги, когда он показывал соседям домашнее порно. Камера была встроена в его будильник. Я его разбил, но соседи проголосовали против выселения Регги. </p>
+    
+    <p>Сана ни за что не признается, что голосовала «за» по финансовым причинам. В июле непросто найти нового жильца в развалюху без кондиционера. А у Саны с деньгами еще хуже, чем у меня. Мама каждый месяц выписывает мне чек, но я не трачу ни цента — держу на случай, если она или отец снова сорвутся.</p>
+
+    <p>– Вот вы идиоты, – ворчу я, когда соседи начинают расходиться.</p>
+    
+    <p>– Регги будет паинькой, – обещает Сана напоследок. – В том числе на завтрашней вечеринке. Пусть только попробует запереть дверь в спальню!</p>
+
+    <hr>
+
+    <p>Когда мы остаемся одни, Бронвин тихо произносит:
+    <br>– Ты это и так знаешь, но я ей не верю.
+    <br>– Угу, – бормочу я.</p>
+
+    <p><em class="inner-thought">Некоторые вещи никогда не меняются. Сперва Джейк Риордан, теперь вот Регги. Какой смысл поступать по совести, когда всякие уроды прут напролом и получают что хотят?</em></p>
+
+    <p>– Мы еще поборемся, – подбадривает меня Бронвин. – Но нам не обязательно искать решение сию же секунду. Давай поговорим о чем-нибудь другом. Например… о фильме, который ты жаждешь со мной посмотреть.</p>
+
+    <p>– «Женщина-демон»?
+    <br>– Точно. А крови много?</p>
+
+    <p>Поглаживая ее колено, я чувствую, как потихоньку исчезает злость.
+    <br>– Меньше, чем обычно.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="13.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>14 / 74</span></li>
+            <li><a class="nav-list-link" href="15.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

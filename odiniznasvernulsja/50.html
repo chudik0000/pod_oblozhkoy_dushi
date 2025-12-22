@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Если ты еще раз подойдешь к нам, Маршалл, я напишу в соцсетях, что ты меня преследуешь, — мой голос звучит твердо, хотя внутри всё дрожит. — И поверь, после того, что ты сделал, тебе никто не поможет.</p>
+    <p>Маршалл Витфилд бледнеет и бросается к своей красной развалюхе. Но прежде чем он успевает уехать, из дверей участка выходит детектив Мендоса. Его взгляд прикован ко мне.</p>
+    <p>— Эдди, — начинает он, игнорируя парней. — Ты уже в курсе? Твой адвокат не звонил?
+    <br>— О чем? — мое сердце пропускает удар.
+    <br>— Джейк Риордан исчез. Он срезал электронный браслет и скрылся.</p>
+
+    <p><em class="inner-thought">Мир вокруг меня зашатался. Исчез. Это слово звучит как смертный приговор. Джейк на свободе, без надзора, и он обещал прийти за мной.</em></p>
+
+    <hr style="border: 1px solid #ccc;">
+
+    <h2 style="text-align: center;">Глава 28. Фиби</h2>
+    <p class="date" style="text-align: center;">Суббота, 18 июля</p>
+
+    <p>Мы снова на крыше «Контиго». Воздух здесь кажется разреженным. 
+    <br>— Исчез — в смысле сбежал или исчез как... Регги? — голос Луиса звучит глухо.</p>
+    <p>Эдди сидит, обхватив себя руками. Она выглядит так, будто ждет удара из темноты. 
+    <br>— Срезал браслет, — повторяет она. — Полиция просит «сохранять бдительность».</p>
+
+    <p>— Может, его тоже похитили? — предполагаю я, хотя сама в это не верю. — Может, он — часть игры?
+    <br>— Или мы ошиблись во всём, — подает голос Мейв, не отрываясь от ноутбука. — Чейз Элтон не при делах. Он в Нью-Йорке, играет в какой-то пьесе. Критики пишут, что он «неподвижен как декорация», но факт остается фактом: он на другом побережье.</p>
+
+    <p>— Он ведь писал Тэми Ли, что, «возможно», он в Сан-Диего, — напоминает Нейт.</p>
+    <p>— Парень, которому врала я, наврал мне! Какая ирония, — Мейв театрально вздыхает. — Он просто хотел завлечь «поклонницу» в Нью-Йорк. Так что Чейза вычеркиваем. Но если это не он мстит за отца... то кто?</p>
+
+    <p><em class="inner-thought">Если Чейз в Нью-Йорке, а Челси в Оксфорде, остается только один человек из той семьи. Чендлер. Тот самый близнец-невидимка, которого Мейв не смогла найти. И теперь к уравнению добавился сбежавший Джейк.</em></p>
+
+    <p>— Подожди, — Бронвин наклоняется к Мейв. — Если Чейз в Нью-Йорке, а Джейк сбежал... что если они как-то связаны? Что если Джейк и есть тот, кто ведет игру?</p>
+</div>
+
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="49.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>50 / 74</span></li>
+            <li><a class="nav-list-link" href="51.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

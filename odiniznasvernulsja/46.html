@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Мама напекла нам цельнозерновых вафель — как любит Бронвин. Она выглядит подтянутой и спокойной, но я не могу отделаться от чувства, что она что-то недоговаривает. 
+    <br>— Ты давно разговаривал с отцом? — вдруг спрашивает она, пристально глядя на меня.</p>
+
+    <p>Мой детектор опасности мгновенно зашкаливает. 
+    <br>— Что он натворил? — я отодвигаю тарелку. 
+    <br>Но мама лишь вздыхает: «Ничего он не натворил, Нейт». Бронвин спасает ситуацию, объявив, что приехал Купер. Мы уходим, но вопрос остается висеть в воздухе: почему мама так беспокоится об отце именно сейчас?</p>
+
+    <hr>
+
+    <p>На пляже Бэйвью яблоку негде упасть. Купер припарковал свою новую «Субару» так бережно, будто это хрустальная ваза. Крис, вооружившись зонтом и складными стульями, руководит нашей маленькой экспедицией к воде. Мы решили, что этот день должен быть беззаботным. Скоро Перу, скоро Йель, скоро Германия. Время утекает сквозь пальцы быстрее, чем песок.</p>
+
+    <p>— Мейв пишет, что они слева от вышки спасателей, — Бронвин снимает футболку, и я на секунду забываю, как дышать. — Говорит, мы сразу заметим её шляпу.</p>
+
+    <p>— Ого! Это какой-то новый уровень защиты от солнца! — Купер указывает на огромную соломенную шляпу, которая издалека кажется спутниковой тарелкой. Под ней, в тени «планеты», притаилась Мейв в компании Эдди и Луиса.</p>
+
+    <p><em class="inner-thought">Мы смеемся, вдыхаем запах соли и сахарной ваты. Но на похоронах Регги я заметил одну деталь: на его шее не было кожаного шнурка, подарка матери. Куда он делся? Был ли это трофей похитителя? В Бэйвью даже солнечный день кажется затишьем перед бурей.</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="45.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>46 / 74</span></li>
+            <li><a class="nav-list-link" href="47.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

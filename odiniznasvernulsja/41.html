@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Регги всегда неплохо ладил с Джейком, — замечает Бронвин. — Он даже защищал его в интервью. Зачем Джейку нападать на того, кто на его стороне?</p>
+    <p>— Фиби и Регги никак не связаны, — добавляет Купер. — Кроме того, что оба были на той злополучной вечеринке. Кто бы это ни делал, он действует и продуманно, и как полный профан одновременно. Хакнуть камеры, похитить людей — и не рассчитать, что Регги может опрокинуть стул и разбиться насмерть?</p>
+    
+    <p>— Может, смерть и была целью? — шепчу я, чувствуя, как по спине пробегает холод. — Как с Брэндоном. Вроде несчастный случай, но все подстроено.</p>
+
+    <p>Мейв вводит что-то в ноутбуке, и на большом экране телевизора появляется страница поиска. 
+    <br>— <strong>«Практика ведет к совершенству»</strong>. Если это единственное правило игры, то что дальше? «К»? «Совершенству»? На ком будет следующая надпись?</p>
+
+    <p>Внезапный звонок в дверь заставляет всех подпрыгнуть. Бронвин заглядывает в видеодомофон и замирает.
+    <br>— У меня галлюцинации, или к нам пришла <strong>Ванесса Мерримен</strong>?</p>
+
+    <p>Нейт виновато закрывает лицо руками. 
+    <br>— Черт... Это моя вина. Я пригласил её до того, как мы нашли Регги. Она хотела извиниться перед Эдди и Купером.</p>
+
+    <p>Через минуту Ванесса врывается в комнату — сверкающее платье, каблуки, идеальный хвост. Она явно ждала дикую тусовку, а не «Клуб убийц» в сборе. 
+    <br>— Мда, — тянет она, оглядывая наши кислые лица. — Примерно так я и представляла вечеринку у Рохасов.</p>
+
+    <p>— Ванесса! — одергивает её Нейт.</p>
+
+    <p>— Ладно, ладно. Вот, — она сует мне в руки бутылку в фольге. — С днем недорождения. Это розовое шампанское.</p>
+
+    <p><em class="inner-thought">Я смотрю на бутылку, потом на её карамельные пряди. Ванесса Мерримен пришла с миром? Или она — еще одна фигура в этой партии, которую мы пока не можем просчитать?</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="40.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>41 / 74</span></li>
+            <li><a class="nav-list-link" href="42.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Эдди вновь прикладывает телефон к уху.
+    <br>– Здравствуйте, миссис Лоутон! Фиби… как это нет? Нет, не со мной. Что?!</p>
+    
+    <p>Эдди мрачнеет, в лице ни кровинки:
+    <br>– <strong>Фиби не ночевала дома.</strong> Поздно вечером она написала матери, что останется у меня. Ума не приложу зачем.</p>
+    
+    <p>– Фиби так не делает, – с нажимом говорит Нокс. Его лицо становится серым от беспокойства.</p>
+    
+    <p>Мейв решительно проверяет геолокацию в «Снэпчате» и, недоверчиво моргнув, поворачивает экран к Нейту:
+    <br>– <strong>Она у тебя дома, Нейт!</strong></p>
+    
+    <p>– Серьезно? Когда я уходил, ее там не было.
+    <br>– Неужели она… с <strong>Регги</strong>? – шепчет Бронвин.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 10. Нейт</h2>
+    <p class="date" style="text-align: center;">Воскресенье, 5 июля</p>
+
+    <p>Мы вшестером заходим в мой дом. Фиби здесь нет.
+    <br>– Вообще не видел ее, чува-ак. С прошлого вечера, – гнусавит Регги, развалившийся на диване с пивом.</p>
+    
+    <p>Бронвин выхватывает у него пульт:
+    <br>– Где ты ее видел?</p>
+    
+    <p>– В моей комнате. Она сидела там одна и уже собиралась уходить. Я предложил задержаться, но она свалила. Вот и всё. Расслабьтесь, шерлоки.</p>
+    
+    <p>– Её телефон здесь, значит, и она тоже, – настаиваю я.
+    <br>– Где, по-твоему, она прячется? Эй, Фи-и-би! Ау-у! – издевается Регги, приподнимая одеяло.</p>
+
+    <p>Эдди снова набирает номер — в доме тишина. <strong>Голосовая почта.</strong></p>
+    
+    <p>Бронвин берет командование на себя:
+    <br>– Предлагаю осмотреться. Она могла уснуть в любой комнате или потерять телефон. Эдди и Нокс – на второй этаж, Мейв и Луис – на первый, а мы с Нейтом обследуем двор.</p>
+
+    <p>Выйдя на улицу, Бронвин признается:
+    <br>– Мне ужасно не по себе. Я зациклилась на Регги и не заметила, как Фиби было тяжело.</p>
+    
+    <p><em class="inner-thought">Шрамы на моей руке напоминают, как много опасностей таит наш городок. Меня воротит от мысли, что Фиби провела ночь с Регги, но другие варианты могут быть еще хуже.</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="21.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>22 / 74</span></li>
+            <li><a class="nav-list-link" href="23.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

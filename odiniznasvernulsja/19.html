@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>–&nbsp;Боже.&nbsp;– У Эдди перехватывает дыхание.&nbsp;– Я тоже ее видела! Ее. Не тебя. Как будто я вдруг стала пустым местом.</p>
+    <p>Мейв кивает. Эдди переводит взгляд на меня, и в ее голос возвращаются стальные нотки:&nbsp;– Зачем ты туда ездила?</p>
+    
+    <p><em class="inner-thought">Ну, я хотела понять, может ли исправиться парень, который чуть не убил человека, так как беспокоюсь из-за брата.</em> Сказать правду? Ни за что!</p>
+    
+    <p>–&nbsp;Фиби, что с тобой происходит?&nbsp;– спрашивает Нокс. В его голосе беспокойство, но для меня это последняя капля. Возвращается Луис с кружками пунша, и я выхватываю одну:</p>
+    <p>–&nbsp;Что со мной? От меня одни беды, вот что! И я ухожу!&nbsp;– Развернувшись, я бреду прочь.</p>
+
+    <p>Мне обидно, что никто не пытается меня удержать. Даже Нокс. Я тупо стою у стены, пока не слышу голос <strong>Ванессы Мерримен</strong>:</p>
+    <p>–&nbsp;Что, вышвырнули из Клуба убийц? Держи.&nbsp;– Она подливает мне в кружку.&nbsp;– Один раз оступишься – и ты уже изгой. Любит эта компашка обличать других, да?</p>
+
+    <p>Я жадно отпиваю пунш, глядя, как <strong>Нейт и Бронвин</strong> присоединяются к друзьям. Ванесса язвит про их «ванильный романчик плохиша и отличницы». С меня хватит. Я ретируюсь в туалет, где понимаю, как сильно напилась.</p>
+    
+    <p>В очереди я проверяю телефон — сообщение от Эммы: <em class="emphasis">«Мне не хватит денег на самолет»</em>. Очередная отговорка. Она не хочет возвращаться в Бэйвью. Я хочу написать: «Я устала разгребать наши проблемы одна», но стираю.</p>
+
+    <p>После туалета я хватаю стакан пунша Ванессы и улепетываю на второй этаж. Там тише. В одной из спален я плюхаюсь в кресло-мешок и двадцать минут пытаюсь без ошибок написать сообщение сестре: <strong>«Пожалуйста, вернись»</strong>.</p>
+    
+    <p>Я проваливаюсь в забытье, а когда встаю — голова идет кругом. В дверях я чуть не сталкиваюсь с парнем, который собирался зайти.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="18.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>19 / 74</span></li>
+            <li><a class="nav-list-link" href="20.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

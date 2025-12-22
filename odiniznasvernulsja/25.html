@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– Эдди! – окликает меня Джейк. При надзирателе он вынужден изображать миротворца, но я вижу его насквозь. Мы уходим к трибунам.</p>
+    
+    <p>– Ты в норме? – спрашивает Нейт. – Прости, что притащил тебя сюда. Я совсем забыл из-за звонка отца.</p>
+    <p>– Все в порядке, – отвечаю я. – Для того и нужны друзья. Даже если ты фанатеешь по «Хэнсонам».</p>
+
+    <p>Перед нами появляется <strong>Патрик Маколи</strong>, отец Нейта. Он выглядит изможденным и напуганным.
+    <br>– «Скорая» уже приехала? – спрашивает он. – Я их вызвал. Я не хотел оставлять ее одну...</p>
+
+    <p>– Кого? – шепчу я, чувствуя холод на шее.</p>
+
+    <p>Мы вбегаем в сарай. В сумраке Нейт опускается на корточки у стены.
+    <br>– <strong>Фиби!</strong></p>
+
+    <p>Она лежит как тряпичная кукла. Пыль на одежде, бледное лицо. На миг мне кажется, что мы опоздали, но она шевелится.
+    <br>– Слава богу! – выдыхаю я. – Ты в безопасности.</p>
+    
+    <p>– Рука! – замечает Нейт.</p>
+    <p>На левом плече Фиби черным маркером выведены крупные, четкие буквы: <strong>ПРАКТИКА</strong>.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 13. Фиби</h2>
+    <p class="date" style="text-align: center;">Вторник, 7 июля</p>
+
+    <p>Купер везет меня в кафе «Контиго». Это мой первый выход из дома за два дня. Бабуля передала мне печенье, а Купер старается быть деликатным.
+    <br>– Как ты вообще? – спрашивает он.</p>
+
+    <p>– Нормально, – вру я.
+    <br>Токсикология в больнице показала, что мне подсыпали <strong>рогипнол</strong>. Кто-то на вечеринке спланировал мою отключку. Я не просто напилась — меня лишили сознания и затащили в сарай.</p>
+
+    <p><em class="inner-thought">Кто это сделал? И что значит это слово на моей руке? Детектив Мендоса подтвердил: это не было случайностью.</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="24.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>25 / 74</span></li>
+            <li><a class="nav-list-link" href="26.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Камеры наблюдения... не работают, — тяжело дыша, сообщает отец. 
+    <br>— Совсем? — Бронвин замирает у порога «Бэйвью-Хай».</p>
+
+    <p>Мы входим внутрь. Здание школы в темноте кажется чужим, зловещим. Мы идем мимо шкафчиков и стеллажей с кубками. Отец ведет нас к мужской раздевалке. Я толкаю дверь — она поддается. В нос бьет знакомый запах пота и хлорки.</p>
+
+    <p>Бронвин включает свет, и в глаза ударяет резкий белый блеск ламп. Я делаю шаг вперед и тут же выставляю руку, преграждая ей путь. 
+    <br>— В чем дело? — она пытается заглянуть мне за плечо.</p>
+
+    <p>По её судорожному вздоху я понимаю: она увидела. На кафельном полу — густые, темно-красные брызги. 
+    <br>— <strong>Кровь!</strong> — выдыхает она.</p>
+
+    <p>Мы осторожно обходим пятно, заворачиваем за угол, и Бронвин роняет свой новый телефон. Он с грохотом ударяется о плитку, но никто не двигается. На боку, привязанный к пластиковому стулу, лежит <strong>Регги</strong>. Кляп, повязка на глазах, серая кожа. У его головы — темная лужа, а на правой руке те же печатные буквы, что были у Фиби:</p>
+
+    <h3 style="text-align: center; letter-spacing: 5px; color: #8b0000;">ВЕДЕТ</h3>
+
+    <hr style="border: 2px solid #000;">
+
+    <h2 style="text-align: center;">Часть II</h2>
+    <h2 style="text-align: center;">Глава 23. Эдди</h2>
+    <p class="date" style="text-align: center;">Вторник, 14 июля</p>
+
+    <p>Я верчу в руках конверт с результатами УЗИ моей сестры. Племянник или племянница? Маленькая частичка радости в этом кошмарном лете. Но звонок Кили по «Фейс-тайму» заставляет меня вздрогнуть.</p>
+
+    <p>— Поздравляю с недоднем рождения, Эдди! Ты красотка с этим цветом волос! — Кили улыбается с экрана на фоне океана. — Я хотела прилететь, но новости о Регги... Я решила, что тебе не до вечеринок.</p>
+
+    <p><em class="inner-thought">Она хотела прилететь ко мне с другого конца страны? Бабочки в животе устраивают бунт. Но Кили права: после того, что Нейт и Бронвин нашли в раздевалке, мир снова раскололся.</em></p>
+
+    <p>— Всё пройдет тихо, — отвечаю я, убирая конверт в ящик. — Мы с Нейтом умеем выбирать время для праздников. Сначала смерть Брэндона, теперь — Регги...</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="38.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>39 / 74</span></li>
+            <li><a class="nav-list-link" href="40.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

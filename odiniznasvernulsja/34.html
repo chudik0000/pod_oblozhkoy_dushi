@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Только сунься к ней — и ты труп, — чеканит Нейт. Ледяной тон, от которого мурашки по коже. Но Джейка это только забавляет.</p>
+    <p>— Что ж, ладно. Скоро с меня снимут браслет, Эдс. Привыкай жить, оглядываясь, потому что рано или поздно я за тобой приду. А его рядом может не оказаться.</p>
+    <p>Джейк скрывается в доме, оставляя нас в удушающей тишине. Поездка в Рамону кажется провалом — мы не нашли Бронвин (которая, как выяснилось, просто заблудилась в лесу) и лишь подставили Эдди под удар. Но тут из тени появляется Мейв с телефоном в руках.</p>
+    <p>— Дозорный из меня так себе, зато я успела пробраться к веранде, пока вы спорили. <strong>Те самые обои! Получите и распишитесь!</strong></p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 19. Фиби</h2>
+    <p class="date" style="text-align: center;">Четверг, 9 июля</p>
+
+    <p>— Обои не те, — выношу я вердикт, глядя на экран.
+    <br>— Уверена? — Мейв разочарованно вздыхает. — Значит, Эдди натерпелась зря.</p>
+
+    <p>Мы всей компанией теснимся в «Хонде» Криса: Мейв, Луис, Купер и я. У нас важная миссия — выбрать Куперу новую машину на рекламный гонорар. Старый джип окончательно «сдох», и теперь Купер присматривает что-то надежное. </p>
+
+    <p>— Ты хотел крутую тачку, а не микроавтобус, — поддразнивает Крис своего парня, когда тот заговаривает о «Субару Аутбек» ради комфорта Бабули.</p>
+
+    <p>Крис притягивает Купера к себе и целует его прямо на светофоре под возмущенные гудки машин. Мы сворачиваем к огромному автосалону «Мэнделей». Блеск металла, панорамные окна и дурацкий слоган: <em>«Роскошь — это судьба!»</em>.</p>
+
+    <p>— В Бэйвью вообще странная реклама, — смеется Луис и начинает распевать старый джингл мармеладок «Гуппи». Оказывается, у него потрясающий голос.
+    <br>— Он у меня полон сюрпризов, — улыбается Мейв.</p>
+
+    <p>Крис аккуратно паркуется. На мгновение кажется, что мы обычные подростки, выбирающие машину другу. Но я ловлю себя на мысли: если обои в доме Джейка — не те, то <strong>где же я была на самом деле?</strong></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="33.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>34 / 74</span></li>
+            <li><a class="nav-list-link" href="35.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

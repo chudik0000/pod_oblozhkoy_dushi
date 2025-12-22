@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Ванесса, через неделю мы с Эдди устраиваем вечеринку в честь недодня рождения. Хочешь прийти?</p>
+    <p>Я сам не верю, что пригласил её, но взгляд Ванессы — смесь шока и робкой надежды — говорит о том, что это было правильное решение. Всем нужен второй шанс. Даже ей.</p>
+
+    <p>Вечер дома обещал быть уютным: Бронвин и мой отец решили вместе приготовить ужин. Но идиллия на кухне разрушилась, когда наша соседка Кристал упомянула, что <strong>Регги пропал</strong>. Он не ночевал дома, пропустил важный турнир по видеоиграм и не вышел на работу в Apple Store. </p>
+
+    <p>— Сутки уже прошли, — заметила Бронвин, и в её глазах вспыхнула знакомая тревога. — Знаю, похоже на паранойю, но... может, проверим школьный сарай? На всякий случай.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 22. Нейт</h2>
+    <p class="date" style="text-align: center;">Пятница, 10 июля</p>
+
+    <p>Пятнадцать минут спустя мы уже на бейсбольном поле «Бэйвью-Хай». Фонарики телефонов разрезают темноту. 
+    <br>— Заперто, — констатирую я, дергая ручку сарая.
+    <br>Отец достает свои ключи. Скрип двери — и пустота. В сарае никого нет. Облегчение смешивается с новым страхом: если ключи отца копировали, то «Осьминог» или кто-то другой имеет доступ ко всей школе.</p>
+
+    <p>— Если это игра, и надпись на руке Фиби <strong>«Практика»</strong> — это термин, — рассуждает Бронвин, — то всё должно быть связано со спортом. Патрик, куда ещё здесь можно спрятать человека? Где ещё есть ключи?</p>
+
+    <p>— Спортзал? Раздевалки? — предлагаю я.</p>
+
+    <p>Отец колеблется. Повсюду камеры, и ночной визит сотрудника с сыном и его девушкой может выглядеть подозрительно. 
+    <br>— Директор узнает, что мы тут были. Может, лучше вызвать полицию?</p>
+
+    <p>— Вы не взломщик, вы проявляете бдительность, — настаивает Бронвин. Она уже нашла след. Она не отступит.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="37.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>38 / 74</span></li>
+            <li><a class="nav-list-link" href="39.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

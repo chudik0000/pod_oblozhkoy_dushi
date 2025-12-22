@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>На веранде «Контиго» уютно — крыша еще закрыта для посетителей, и мы можем говорить свободно. Иви оставляет поднос с закусками, и Мейв демонстративно открывает ноутбук.</p>
+    
+    <p>– Последние двое суток я почти не спала, — начинает Мейв, и я замечаю темные круги у неё под глазами. — Группа мстителей перебралась в <strong>«БаЧАТу»</strong> — это приложение для тех, кого выгнали из обычных соцсетей. Там полно конспирологов и расистов.</p>
+
+    <p>Мейв рассказывает, что зарегистрировалась там под именем Тэми Ли Спенсер и вступила в переписку с анонимом по кличке <strong>Осьминог</strong> (он же Аксель).
+    <br>– Он треплется о всякой ерунде, зовет меня на ралли монстр-траков, но <strong>никто</strong> на форуме не упоминал Фиби, игру «Правда или Вызов» или хакнутый билборд. Для них Джаред — просто неудачник. Похоже, старые мстители тут ни при чем.</p>
+
+    <p>Эдди облегченно вздыхает за Эли, но тут же мрачнеет.
+    <br>– А если это Джейк? Фиби, можно обсудить надпись на твоей руке?</p>
+
+    <p>Я киваю, чувствуя, как призрачные буквы снова впиваются в кожу.
+    <br>– Я вспомнила твой рассказ о том, как Джейк менял тебе колесо, — продолжает Эдди. — Ты сказала, что тебе пора научиться самой это делать. А он ответил: <strong>«Это дело практики»</strong>.</p>
+
+    <p>За столом воцаряется мертвая тишина. Крис замирает с вилкой, у Бронвин и Мейв расширяются зрачки. Кусок эмпанады встает у меня поперек горла.</p>
+
+    <p>– Ну нет... — выдыхает Купер. — Не может быть. В каком смысле «практика»? Фиби была разминкой, а дальше что?</p>
+    <p>– <strong>Дальше — я</strong>, — заканчивает Эдди.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="26.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>27 / 74</span></li>
+            <li><a class="nav-list-link" href="28.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Я останавливаюсь, чтобы оглядеть маленький неухоженный дворик. Палит солнце.
+    <br>– Ты помнишь, какой у Фиби чехол на телефоне?
+    <br>– Розовый, – отзывается Бронвин.</p>
+
+    <p>Мы обходим дом. На заднем дворе — запущенный огород Кристал и замшелый фонтанчик. И вдруг я замечаю <strong>ярко-розовый прямоугольник под одной из скамеек</strong>. Бронвин поднимает телефон. На экране светится сообщение от сестры: <em class="emphasis">«ГДЕ ТЕБЯ НОСИТ???»</em></p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 11. Эдди</h2>
+    <p class="date" style="text-align: center;">Воскресенье, 5 июля</p>
+
+    <p>Полиция Бэйвью верна себе: их больше волнует алкоголь на вечеринке, чем пропажа человека. 
+    <br>– Значит, несовершеннолетние употребляли алкоголь? – уточняет сержант Будапешт, упаковывая телефон Фиби в пакет.</p>
+
+    <p>Миссис Лоутон в отчаянии обнимает Оуэна:
+    <br>– Сержант, у меня пропала дочь! Она не уйдет никуда без телефона. Выясните у Джареда Джексона, не натравил ли он на неё своих мстителей!</p>
+
+    <p>Будапешт неохотно соглашается поехать в участок. Бронвин и Нокс едут с ними как свидетели. Мейв провожает их злым взглядом:
+    <br>– Толку от него как обычно. Поеду домой, попробую вычислить мстителей в Сети. Если они замешаны, то где-то это обсуждают.</p>
+
+    <p>Я остаюсь с Нейтом. Нам обоим не по себе. 
+    <br>– Побудь немного здесь, – предлагает он. – Спросим Сану, когда вернется, вдруг она что-то видела.</p>
+
+    <p><em class="inner-thought">Мы с Нейтом понимаем друг друга на глубинном уровне. Мы оба знаем, каково это: сделать шаг вперед, а потом оказаться отброшенным на три назад. В моменты беспомощности Нейт — идеальная компания.</em></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="22.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>23 / 74</span></li>
+            <li><a class="nav-list-link" href="24.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

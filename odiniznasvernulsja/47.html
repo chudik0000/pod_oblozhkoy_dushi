@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Александр Элтон умер при крайне подозрительных обстоятельствах, — Мейв поправила свою гигантскую шляпу, не отрываясь от экрана ноутбука. — Его машину нашли у пляжа, а тело выбросило на берег только через месяц. И телефон он «забыл» в офисе. Странно, да?</p>
+    <p>Мы с Бронвин переглянулись. История семьи Элтонов пугающе напоминала трагедию Джареда Джексона: смерть отца, а затем гибель матери в автокатастрофе с алкоголем в крови. Месть в Бэйвью — это семейная традиция.</p>
+    
+    <p>— Чейз Элтон сейчас в Лос-Анджелесе, пытается играть в кино, — продолжала Мейв. — Его сестра Челси учится в Оксфорде. А вот про третьего, близнеца по имени <strong>Чендлер</strong>, нет вообще ничего. Ни соцсетей, ни упоминаний. Словно он испарился.</p>
+
+    <p>— Подозрительно, — буркнул Крис, разминая плечи Куперу. — Нейт, ты работаешь в баре. Тебе нужно разговорить миссис Риордан. Она там частый гость.
+    <br>— Ну нет! — я запротестовал. — Я ей не психолог. 
+    <br>— Тогда используем Ванессу, — предложил Крис с коварной улыбкой. — Она хотела загладить вину? Пусть присядет на уши матери Джейка в загородном клубе.</p>
+
+    <p>Наш заговор прервал Луис, выбежавший из воды вместе с Фиби. 
+    <br>— Волейбольная площадка свободна! Эдди и Нокс её держат. Идемте, как в старые добрые времена!</p>
+
+    <p><em class="inner-thought">Купер сорвался с места первым. Мы потянулись за ним, стараясь на мгновение забыть о мертвецах и таинственных близнецах. Но пока мы делились на команды, я не мог перестать думать о Чендлере Элтоне. Где скрывается парень, у которого нет цифрового следа в мире, где каждый оставляет отпечатки?</em></p>
+
+    <hr>
+
+    <p>— Чур, я в твоей команде! — Крис подмигнул Куперу, и мы направились к сетке.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="46.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>47 / 74</span></li>
+            <li><a class="nav-list-link" href="48.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

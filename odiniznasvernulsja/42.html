@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Извинения приняты, — говорю я Ванессе. Гнев испарился, осталась только усталость. Кто знает, сколько времени нам всем отведено в этом городе?</p>
+    <p>Но Крис не так милосерден. Его лицо пылает, он буквально трясется от ярости. 
+    <br>— Тебе это легко говорить, Эдди! — кричит он. — А я собирал Купера по кусочкам, пока ты и твои дружки насмехались над ним в один из худших дней в его жизни! Подтверди слова делом — пожертвуй деньги в фонд поддержки меньшинств!</p>
+    <p>— Хорошо! — Ванесса испуганно кивает. — Обязательно!</p>
+
+    <p>Тишину, наступившую после вспышки Криса, прерывает сама Ванесса. Она смотрит на экран ноутбука Мейв.
+    <br>— Ого, старые рекламные ролики? «Практика ведет к совершенству»... Помните рекламу курсов подготовки к экзаменам? Родители тогда еще скандалили, мол, совершенства не бывает.</p>
+
+    <p>Мы замираем. Мейв быстро находит ролик на YouTube. Трое актеров в стильной библиотеке произносят по слову:
+    <br>— Практика...
+    <br>— Ведет...
+    <br>— К совершенству!</p>
+
+    <p>— Эту кампанию делали <strong>«Конрад и Олсен»</strong>, — добавляет Ванесса, глядя на Нейта.
+    <br>— Это то самое агентство, которому принадлежал взломанный билборд, — чеканит Нейт. — И там работала мать Джейка.</p>
+
+    <p><em class="inner-thought">В комнате становится холодно. Те же слова, то же агентство, та же семья. Если мать Джейка была «соуправляющим директором», она знала все коды доступа. Но зачем ей, успешной женщине, играть в эти кровавые игры? Или она — лишь прикрытие для кого-то другого?</em></p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 25. Фиби</h2>
+    <p class="date" style="text-align: center;">Четверг, 16 июля</p>
+
+    <p>— Прости, пожалуйста, — повторяет Эмма.
+    <br>Моя сестра наконец-то вернулась. Сидит на кухне, такая же идеальная и бледная, как всегда. Но её возвращение не приносит облегчения.</p>
+
+    <p>— Двенадцать дней, Эмма! — я едва сдерживаю слезы. — Меня похитили, Регги мертв, а ты ждала дешевого рейса?! Ты понимаешь, что здесь происходит? Нокс считает, что всё это из-за Оуэна. Из-за того, что мы натворили!</p>
+
+    <p>Эмма опускает глаза. Она всегда была голосом разума, но сейчас её молчание кажется предательством.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="41.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>42 / 74</span></li>
+            <li><a class="nav-list-link" href="43.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

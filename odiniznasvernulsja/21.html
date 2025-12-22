@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>–&nbsp;Ого. Привет, Фиби.&nbsp;– Это <strong>Регги Кроули</strong>.&nbsp;– Давно не виделись. Что ты делаешь в моей комнате?</p>
+    <p>Регги пялился на меня еще тогда, когда Эмма была его репетитором. Те же три бусины на шнурке, та же нечесаная бородка. Парню девятнадцать, а он все тот же.
+    <br>–&nbsp;Меня, что ли, ждала?&nbsp;– Он зазывно приподнимает бровь.</p>
+    <p>–&nbsp;Нет уж, спасибо,&nbsp;– выдаю я и выскальзываю в коридор.</p>
+
+    <p>Внизу Команды Бэйвью уже нет. Зато там <strong>Джулс, Моника и Шон</strong>. Они протягивают мне стакан, и я пью. 
+    <br>–&nbsp;Нам нужно узнать насчет Нокса,&nbsp;– говорит Джулс.&nbsp;– Он свободен? Он нравится Монике.</p>
+    <p>–&nbsp;Вы что, серьезно?&nbsp;– Я в ярости. Шон заявляет, что они с Ноксом теперь «братаны».
+    <br>–&nbsp;Неправда! Он вас на дух не выносит! Отстаньте от него!</p>
+    <p>–&nbsp;Фиби, Нокс не твоя игрушка!&nbsp;– отрезает Джулс. – Если он тебе нравится – давно бы подкатила.</p>
+
+    <p>Я пошатываюсь и бреду к выходу. Голова трещит. Пытаюсь вызвать такси, но оказываюсь где-то в кустах, врезаюсь в скамью. Перед глазами зыбкий силуэт.
+    <br>–&nbsp;Эх, Фиби-Фиби,&nbsp;– звучит голос как из тоннеля.&nbsp;– Ты совершила большую ошибку.</p>
+    <p>А потом все проваливается во тьму.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 9. Нейт</h2>
+    <p class="date" style="text-align: center;">Воскресенье, 5 июля</p>
+
+    <p>Мы собрались в комнате для персонала «Контиго», чтобы посмотреть бейсбольный матч и новую рекламу с Купером. За столом вся банда: я, Бронвин, Эдди, Купер, Крис, Мейв, Луис и Нокс. <strong>Один стул свободен – Фиби нет.</strong></p>
+
+    <p>Эдди фонтанирует идеями: 
+    <br>–&nbsp;Давайте устроим вечеринку в честь нашего недодня рождения 14 июля! Позовем всю банду.</p>
+    <p>Бронвин предлагает пригласить Кейт и Юмико, но спотыкается на имени Эвана, своего бывшего, и быстро осекается. Я только усмехаюсь. Мы сидим, ждем ролик Купера и гадаем, где Фиби.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="20.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>21 / 74</span></li>
+            <li><a class="nav-list-link" href="22.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

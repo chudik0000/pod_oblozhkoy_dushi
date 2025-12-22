@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>Бронвин и кухня — вещи несовместимые. Если я не вмешаюсь в процесс готовки риса, ужинать мы будем завтра. Но идиллия в баре Загородного клуба длится недолго.</p>
+
+    <p>Я замечаю парня, подошедшего к стойке с деньгами в руке.
+    <br>– Какого черта ты здесь забыл?!</p>
+
+    <p>Слова вырываются прежде, чем я успеваю сообразить. Передо мной стоит <strong>Джейк Риордан</strong> в штанах цвета лосося и майке поло. Наглый, напыщенный, с отрастающими волосами. 
+    <br>– Шардоне, будь добр, — язвит он, бросая двадцатку на стойку.
+    <br>– Пошел к черту.</p>
+
+    <p>Джейк ухмыляется и наклоняется ближе, переходя на шепот, полный яда:
+    <br>– Я жду, когда ты лишишься всего, Маколи. Отца-алкаша, матери-наркоманки и своей очкастой подружки. Как только она исчезнет, ты быстро покатишься по наклонной. Вот уви...</p>
+
+    <p>Я бросаюсь на него, но Гэвин успевает перехватить мои руки и оттащить назад.
+    <br>– Остынь! — пыхтит он. — Уходи отсюда, Нейт! Ему только и надо, чтобы тебя арестовали за нападение.</p>
+
+    <p>Джейк издевательски машет мне на прощание и уходит вместе с матерью. Внутри меня все клокочет. На парковке я вижу сообщение от Бронвин с фото овощей: <em class="emphasis">«Я отметила тебя в сторис, ЕСЛИ БЫ ТЫ ХОТЬ ИНОГДА ЗАХОДИЛ В ИНСТАГРАМ»</em>.</p>
+
+    <p><em class="inner-thought">На мгновение мне хочется написать: «Забудь про ужин». Сказать ей, что она слишком хороша для такого лузера, как я. Но я делаю глубокий вдох. Я не позволю Джейку разрушить то единственное, что делает меня счастливым.</em></p>
+
+    <p>Я отправляю Бронвин сердечко, а Эдди короткое сообщение: <strong>«Ты крутая»</strong>. Потому что сегодня нам всем нужно это слышать.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="29.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>30 / 74</span></li>
+            <li><a class="nav-list-link" href="31.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

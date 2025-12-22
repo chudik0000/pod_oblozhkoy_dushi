@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>— Увеличила, — выдыхает Мейв. Картинка зернится, распадаясь на пиксели, но красное пятно обретает очертания. Это кепка. А под ней — лицо, которое невозможно забыть, даже если оно в расфокусе.</p>
+    <p>— О боже, — Мейв прикрывает рот ладонью. — Эдди, это же <strong>Джейк</strong>. Но как? Фото выложено три часа назад. Если он в Оксфорде, то он не просто сбежал, он пересек океан.</p>
+    <p>— Или кто-то хочет, чтобы мы так думали, — мой голос дрожит. — Посмотри на дату в метаданных, если можешь. Если Джейк в Англии рядом с Челси Элтон... значит, они заодно? Семья жертвы и семья убийцы?</p>
+
+    <hr style="border: 1px solid #ccc;">
+
+    <h2 style="text-align: center;">Глава 31. Фиби (продолжение)</h2>
+    <p class="date" style="text-align: center;">Понедельник, 20 июля</p>
+
+    <p>Я выхожу из ванной, пряча телефон в задний карман. Оуэн доел хлопья и теперь возит ложкой по дну тарелки, издавая противный скрежет. 
+    <br>— Оуэн, — я стараюсь, чтобы мой голос звучал буднично. — Помнишь тот черный рюкзак, который ты брал к Бену? Там в кармашке лежала одна штука... кожаная. Где ты её взял?</p>
+
+    <p>Брат замирает. Его плечи напрягаются, и он не поднимает глаз. 
+    <br>— Нашел, — коротко бросает он. 
+    <br>— Где именно? Это важно. 
+    <br>— В «Конрад и Олсен», — наконец говорит он, и у меня внутри всё обрывается. — В тот день, когда ты водила меня на работу. Он лежал под столом в кабинете той женщины, Люсинды. Я подумал, это брелок. Хотел вернуть, но потом забыл.</p>
+
+    <p>Значит, Регги был там? Или кто-то принес его вещь в офис рекламного агентства, чтобы подставить Люсинду? Или саму меня?</p>
+
+    <p><em class="inner-thought">«Правда всегда выходит наружу», — гласило сообщение. Если шнурок был в офисе, значит, убийца — кто-то из сотрудников. Кто-то, кто знал об Александре Элтоне всё. Кто-то, кто всё это время был рядом.</em></p>
+
+    <p>Я хватаю сумку. 
+    <br>— Эмма, присмотри за ним. Мне нужно в кафе к Луису. Прямо сейчас.</p>
+
+    <p>Выбегая на улицу, я чуть не сталкиваюсь с почтальоном. Он протягивает мне конверт без обратного адреса. Внутри — глянцевая фотография. На ней я, Люсинда и Скотт Риордан, выходящие из здания агентства в прошлую пятницу. На мой лоб наведен красный крестик.</p>
+
+    <p><strong>Практика закончилась. Начинается финал.</strong></p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="54.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>55 / 74</span></li>
+            <li><a class="nav-list-link" href="56.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

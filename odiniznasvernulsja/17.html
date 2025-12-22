@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Один из нас - следующий </h1>
+            <p class="author-name">Карен М. Макманус</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text">
+    <p>– Сама знаешь, как оно бывает. Такие сборища очень живучие. Их запрещают, а они всплывают где-нибудь под другим названием.</p>
+    <p>Конечно, сестра права. Видимо, зря я надеялась хотя бы на один спокойный год без саймоновских фан-клубов.</p>
+    <p>– Давай подключим к делу Мейв! – предлагаю я. – Она же спец по…</p>
+    <p>Эштон останавливает меня взмахом руки:
+    <br>– Эли не хочет ее впутывать. Мейв и Нокс – подростки. Если объявился новый Саймон или Джаред, твоим друзьям опасно к нему приближаться.</p>
+
+    <p>– А тебе – не опасно? – возражаю я. – Эш, поживи пока у папы в Чикаго, ладно? <em class="inner-thought">Моя мачеха Кортни тоже пригласила меня, но я не представляю, как выдержу в тесной квартирке с тремя детьми.</em></p>
+    <p>– Не могу, – вздыхает сестра. – Вся моя жизнь – здесь, Эдди. Здесь мой муж.</p>
+
+    <p>Эштон переводит тему на маму:
+    <br>– Вообще-то она вся на нервах из-за Джейка. Она жалеет, что поддерживала ваши отношения. Дай ей шанс, Эдди. Ты, кстати, рассказала ей про Кили?</p>
+    <p>– Нет, конечно! Я годами не делилась с матерью переживаниями.</p>
+
+    <p>Мама мчится к нам с парой вязаных пинеток за семьдесят пять долларов. Пока они с Эштон обсуждают обед, я достаю телефон. Нейт на мой вопрос о чипсах для вечеринки ответил в своем стиле: <em class="emphasis">«Нашла из-за кого переживать. Они этого не заслуживают»</em>. Но я пишу не ему.</p>
+    <p><strong>«Нужна твоя помощь»</strong>, – отправляю я сообщение Мейв.</p>
+
+    <hr>
+
+    <h2 style="text-align: center;">Глава 8. Фиби</h2>
+    <p class="date" style="text-align: center;">Суббота, 4 июля</p>
+
+    <p>На вечеринке у Нейта я никак не могу отвести взгляд от пуговицы <strong>Нокса</strong>. Вторая сверху пуговица на его голубой рубашке застегнута лишь наполовину.</p>
+    
+    <p><em class="inner-thought">Позволяет ли наш новый договор такое вмешательство в гардероб? Пуговица – это всего лишь предлог.</em></p>
+
+    <p>– Фиби? Ты меня слушаешь? – спрашивает Нокс.
+    <br>– Извини, задумалась… У тебя тут не до конца застегнуто.</p>
+    
+    <p>Нокс разбирается с пуговицей. Мимо дефилирует соседка Нейта – <strong>Кристал</strong>. Она машет Эдди, игнорирует меня, но вдруг расплывается в улыбке, глядя на Нокса.</p>
+</div>
+               </p>
+
+        </section>
+
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="16.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>17 / 74</span></li>
+            <li><a class="nav-list-link" href="18.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

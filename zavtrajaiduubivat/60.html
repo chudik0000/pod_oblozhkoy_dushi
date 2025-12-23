@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Завтра я иду убивать</h1>
+            <p class="author-name">Ишмаэль Бих</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="reader-app" id="readerApp" style="font-family: 'Georgia', serif; line-height: 1.7; color: #111; max-width: 800px; margin: 0 auto;">
+
+    <div class="border-crossing" style="background-color: #f0f4f8; border-left: 5px solid #2980b9; padding: 25px; margin: 30px 0;">
+        <p>Гвинейские солдаты смотрели на нас сквозь прицелы, будто ждали повода нажать на курок. Я прятал глаза, боясь, что они увидят во мне бывшего солдата. Мою сумку разорвали, вещи вытряхнули в пыль. <strong>Две рубашки, две майки и три пары штанов — вот и всё, что осталось от моей жизни в Сьерра-Леоне.</strong></p>
+    </div>
+
+    <div class="humiliation" style="border: 1px solid #ddd; padding: 25px; margin: 30px 0; background-color: #fff;">
+        <p>На одном из блокпостов меня заставили раздеться. Солдат забрал мой любимый ремень с головой льва. Когда на последнем КПП у меня упали штаны под хохот толпы, я почувствовал, как внутри вскипает знакомая ярость. Но я сжал кулаки. <strong>Я теперь гражданский. Мое оружие — это терпение.</strong></p>
+    </div>
+
+    <div class="the-gamble" style="background-color: #fffde7; border: 2px dashed #f1c40f; padding: 30px; margin: 30px 0; position: relative;">
+        <h3 style="text-align: center; color: #856404; text-transform: uppercase;">Риск ради свободы</h3>
+        <p>У меня не было денег на последний штамп. Совсем. Когда пассажир впереди уронил сумки, я просто поднял их и пошел за ним прямо в автобус, минуя пост. Сердце колотилось в горле. Если бы меня поймали — это был бы конец.</p>
+        
+        <p style="font-style: italic; text-align: center; margin-top: 20px; font-weight: bold;">
+            Автобус тронулся. Я въехал в Гвинею нелегалом, без единого гроша в кармане, но я оставил войну позади.
+        </p>
+    </div>
+
+    <div class="journey-info" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.85em; color: #666;">
+        <p><strong>Путь Ишмаэля:</strong> Фритаун → Камбия (граница) → Конакри (80 км ада и 15 блокпостов). В Конакри ему предстоит найти посольство США и способ связаться с Лорой Симмз.</p>
+    </div>
+
+</div>
+                  </p>
+
+        </section>
+<button class="read" onclick="window.location.href='glossary.html';" style="cursor:pointer;">
+    📖 Словарь терминов
+</button>
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="59.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>60/ 64</span></li>
+            <li><a class="nav-list-link" href="61.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

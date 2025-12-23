@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Завтра я иду убивать</h1>
+            <p class="author-name">Ишмаэль Бих</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text" style="font-family: 'Georgia', serif; line-height: 1.7; color: #111; max-width: 800px; margin: 0 auto;">
+
+    <div class="laura-gift" style="background-color: #fdfaf1; border: 1px solid #e6d5b8; padding: 25px; margin: 30px 0; border-radius: 10px;">
+        <p>Заметив, как мы с Ба дрожим от холода в одних рубашках, Лора принесла нам куртки, шапки и перчатки. В этой «амуниции» я чувствовал себя как в камуфляже, но зато мог подолгу гулять по городу. Позже Лора станет моей приемной матерью, и мы будем часто вспоминать это время как перст судьбы.</p>
+    </div>
+
+    <div class="un-speech-moment" style="border: 2px double #333; padding: 35px; margin: 30px 0; background-color: #fffdfa; position: relative;">
+        <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 2px; color: #111;">Голос в ООН</h3>
+        <p>В последний день конференции перед членами ЭКОСОС я решил отложить заранее написанную речь и говорить от сердца. Я рассказал о том, как потеря семьи и голод заставили меня стать солдатом, и к какому выводу я пришел после реабилитации.</p>
+        
+        <p style="font-style: italic; color: #2c3e50; border-left: 4px solid #c0392b; padding-left: 20px; margin: 20px 0;">
+            «Я больше не солдат, я обычный мальчик. Теперь я понимаю, что все люди – братья. Из того, что произошло со мной, я сделал один главный вывод: месть – это зло. Я начал воевать, чтобы отомстить за погибшую семью, но понял, что мне придется убивать других. Семья погибшего захочет отомстить мне. Одно убийство последует за другим, и мести не будет конца…»
+        </p>
+
+        <p>Я выразил надежду, что только окончание войны сможет прекратить вовлечение детей в боевые действия. Дипломаты в костюмах слушали мой рассказ со всей серьезностью.</p>
+    </div>
+
+    <div class="new-york-memories" style="background-color: #f4f7f6; padding: 20px; margin: 30px 0; border-radius: 8px;">
+        <p>Между заседаниями мы с Мадокой открывали для себя Нью-Йорк: сияющую Таймс-сквер, елку на Рокфеллер-плаза и молчаливых людей в метро. Я звонил дяде во Фритаун, чтобы дать ему послушать шум города, и он, наконец, поверил, что я действительно в Америке.</p>
+    </div>
+
+</div>
+                  </p>
+
+        </section>
+<button class="read" onclick="window.location.href='glossary.html';" style="cursor:pointer;">
+    📖 Словарь терминов
+</button>
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="54.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>55/ 64</span></li>
+            <li><a class="nav-list-link" href="56.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

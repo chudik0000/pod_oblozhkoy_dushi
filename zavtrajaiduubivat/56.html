@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Завтра я иду убивать</h1>
+            <p class="author-name">Ишмаэль Бих</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="reader-app" id="readerApp" style="font-family: 'Georgia', serif; line-height: 1.7; color: #111; max-width: 800px; margin: 0 auto;">
+    <header class="book-header" style="border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px;">
+        <h1 id="bookTitle" style="font-size: 1.8em; margin-bottom: 10px;">Завтра я иду убивать</h1>
+        <p class="author-name" style="font-style: italic; color: #555;">Ишмаэль Бих</p>
+    </header>
+
+    <section class="book-content">
+        <div class="farewell-evening" style="background-color: #fdfaf1; border: 1px solid #e6d5b8; padding: 25px; margin: 30px 0; border-radius: 8px;">
+            <p>Наш прощальный вечер в Ист-Вилледж был идеальным. Дом Лоры, наполненный гобеленами и книгами со сказками со всего мира, казался мне другим Нью-Йорком — уютным и родным. Мы танцевали всю ночь, не желая верить, что многим из нас предстоит вернуться в места, где нет мира.</p>
+            <p>15 ноября 1996 года я улетел домой. Мне почти исполнилось шестнадцать. Покидая Америку, я чувствовал грусть, но и радость: теперь я знал, что даже если я умру, память обо мне будет жить на другом краю света.</p>
+        </div>
+
+        <h2 class="chapter-title" style="text-align: center; text-transform: uppercase; letter-spacing: 2px; margin: 40px 0;">Глава 21</h2>
+
+        <div class="return-to-reality" style="border-left: 5px solid #2c3e50; padding-left: 20px; margin: 30px 0;">
+            <p>Вернувшись, я часами рассказывал семье и Мохамеду о самолетах, небоскребах и снеге. Дядя слушал с недоверием, считая мое путешествие странным плодом воображения. Мы с Мохамедом пошли в школу Святого Эдуарда. Я так хотел стать обычным учеником, но одноклассники сторонились нас, зная наше прошлое. Война продолжала калечить наши судьбы, даже когда мы сложили оружие.</p>
+        </div>
+
+        <div class="coup-d-etat" style="background-color: #fff5f5; border: 1px solid #deb887; padding: 25px; margin: 30px 0;">
+            <h3 style="color: #c0392b; text-transform: uppercase; font-size: 1.1em; text-align: center;">25 мая 1997 года</h3>
+            <p>Утро началось не с щебета птиц, а со звуков выстрелов у здания парламента. По Подемба-роуд неслись солдаты, а из распахнутых дверей центральной тюрьмы выходили вооруженные преступники.</p>
+            <p>Город заволокло дымом пожарищ. По радио объявил себя президентом Джонни Пол Корома, лидер РСВС. Его безграмотная речь сопровождалась криками и взрывами на улицах.</p>
+            <p style="font-weight: bold; text-align: center; margin-top: 15px;">«Опять? Только не это!» — читал я в глазах Мохамеда. Мирная жизнь, которую мы так трудно строили, рушилась на глазах.</p>
+        </div>
+    </section>
+
+    <footer class="next-step-hint" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9em; color: #777;">
+        Фритаун погрузился в хаос. Солдаты и бывшие заключенные начали грабить дома, и семье Ишмаэля предстоит столкнуться с голодом и смертельной опасностью в собственном доме.
+        <br><strong>Хотите узнать, как Ишмаэль и его дядя пытались выжить в осажденном городе и какие трагические новости принес этот переворот?</strong>
+    </footer>
+</div>
+                  </p>
+
+        </section>
+<button class="read" onclick="window.location.href='glossary.html';" style="cursor:pointer;">
+    📖 Словарь терминов
+</button>
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="55.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>56/ 64</span></li>
+            <li><a class="nav-list-link" href="57.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Завтра я иду убивать</h1>
+            <p class="author-name">Ишмаэль Бих</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="chapter-text" style="font-family: 'Georgia', serif; line-height: 1.7; color: #111; max-width: 800px; margin: 0 auto;">
+
+    <div class="voice-of-hope" style="background-color: #f0f7f4; border-left: 5px solid #27ae60; padding: 25px; margin: 30px 0;">
+        <p>Я стал голосом тех, кто молчал. Мои речи во Фритауне слушали взрослые в костюмах, а я твердил им: <strong>«Нас можно вернуть к нормальной жизни!»</strong>. Я сам был живым доказательством этих слов, хотя внутри меня всё еще жили тени.</p>
+    </div>
+
+    <div class="reunion-childhood" style="border: 1px solid #ddd; padding: 20px; margin: 30px 0; background-color: #fff;">
+        <p>В конце шестого месяца в центр привезли <strong>Мохамеда</strong>, моего лучшего друга детства. Увидев его, я замер. Он показал «бегущего человека», запел <em>Here Comes The Hammer</em> [37], и годы войны будто испарились. Мы танцевали прямо на крыльце, как когда-то в Могбвемо. 
+        <br>– Ты был трудным подростком, – смеялся он.
+        <br>– Я знаю, Мохамед. Я знаю.</p>
+    </div>
+
+    <div class="search-for-family" style="background-color: #f9f9f9; padding: 25px; margin: 30px 0; border-radius: 8px;">
+        <p>Лесли пришел ко мне с печальными новостями: родственников найти не удалось. Но я вспомнил слова отца о <strong>дяде Томми</strong>, плотнике из Фритауна. Я не верил, что это поможет, но Лесли записал имя в свою тетрадь.</p>
+    </div>
+
+    <div class="uncle-meeting" style="border: 2px double #333; padding: 30px; margin: 30px 0; background-color: #fffdfa; position: relative;">
+        <h3 style="text-align: center; text-transform: uppercase; color: #111;">Встреча с прошлым</h3>
+        <p>Дверь открылась, и вошел высокий человек с застенчивой улыбкой. Он не был похож на отца, но когда он обнял меня, я почувствовал что-то забытое. 
+        <br><strong>Он плакал.</strong> В моем племени мужчины плачут редко, и эти слезы убедили меня больше любых документов.</p>
+        
+        <p style="font-style: italic; color: #2c3e50; border-top: 1px solid #eee; padding-top: 15px;">
+            – Я считаю тебя своим сыном, – сказал он. – Я живу скромно, но подарю тебе свою любовь и тепло.
+        </p>
+        <p>Меня так давно никто не называл сыном. Я стоял, опустив голову, и в сердце медленно таял лед.</p>
+    </div>
+
+    <p>Дядя Томми ушел, пообещав навещать меня каждые выходные. Я остался стоять на пороге, глядя ему вслед. У меня снова была семья — настоящая, не временная. Семья, которая не знала «Зеленую Змейку», но была готова принять Ишмаэля.</p>
+
+    <div class="repatriation-note" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9em; color: #777;">
+        <p>Термин <strong>«репатриация»</strong> в контексте книги означает не возвращение в страну, а возвращение человека в человеческое сообщество из состояния войны.</p>
+        <p>[37] <em>Here Comes The Hammer</em> — популярный хит MC Hammer начала 90-х.</p>
+    </div>
+
+</div>
+                  </p>
+
+        </section>
+<button class="read" onclick="window.location.href='glossary.html';" style="cursor:pointer;">
+    📖 Словарь терминов
+</button>
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="46.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>47/ 64</span></li>
+            <li><a class="nav-list-link" href="48.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

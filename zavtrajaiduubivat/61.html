@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Завтра я иду убивать</h1>
+            <p class="author-name">Ишмаэль Бих</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="reader-app" id="readerApp" style="font-family: 'Georgia', serif; line-height: 1.7; color: #111; max-width: 800px; margin: 0 auto;">
+
+    <div class="conakry-night" style="background-color: #f0f4f8; border-left: 5px solid #2980b9; padding: 25px; margin: 30px 0;">
+        <p>Я сидел на полу во дворе посольства Сьерра-Леоне в Конакри, прислонившись к холодной стене. Вокруг на матрасах и узлах лежали такие же беженцы. Я жевал остатки сухого риса и слушал, как женщина неподалеку шепчет сказку своим детям. В этот момент из глубин памяти всплыла притча, которую нам рассказывали у костра в детстве.</p>
+    </div>
+
+    <div class="the-parable" style="background-color: #fff9f0; border: 2px solid #f3e5ab; padding: 30px; margin: 30px 0; border-radius: 15px;">
+        <h3 style="text-align: center; color: #856404; text-transform: uppercase; letter-spacing: 1px;">Притча об обезьяне</h3>
+        <p>Охотник прицелился в обезьяну, но та сказала: 
+        <br>— Выстрелишь в меня — умрет твоя мать. Не выстрелишь — умрет твой отец. Что ты выберешь?</p>
+        
+        <p style="font-style: italic; color: #555; border-top: 1px solid #e6d5b8; padding-top: 15px; margin-top: 15px;">
+            В деревне мы, дети, годами спорили над этим вопросом. Мы пытались схитрить, предлагали охотиться на оленей, но старейшины были неумолимы: выбор должен быть сделан.
+        </p>
+
+        <p style="font-weight: bold; font-size: 1.1em; color: #111; text-align: center; margin-top: 20px;">
+            И тогда, в семь лет, я нашел свой ответ. Я бы выстрелил в обезьяну. Не ради матери или отца, а ради того, чтобы она больше никогда не могла поставить ни одного человека перед таким ужасным выбором.
+        </p>
+    </div>
+
+    <div class="final-thought" style="border: 1px solid #ddd; padding: 25px; margin: 30px 0; background-color: #fff; text-align: center;">
+        <p>Именно поэтому я здесь. Именно поэтому я выжил и рассказал всё это. Чтобы «обезьяна» войны замолчала навсегда.</p>
+    </div>
+
+    <hr style="border: 0; border-top: 2px double #eee; margin: 40px 0;">
+
+    <section class="historical-timeline" style="font-size: 0.95em; color: #444;">
+        <h2 style="text-align: center; text-transform: uppercase; color: #2c3e50;">Исторический контекст</h2>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li style="margin-bottom: 15px;"><strong>1462 г.</strong> — Португальцы называют эти земли <em>Sierra Lyoa</em> (Львиные горы).</li>
+            <li style="margin-bottom: 15px;"><strong>1652 г.</strong> — Первая отправка рабов из Сьерра-Леоне в Северную Америку.</li>
+            <li style="margin-bottom: 15px;"><strong>1991–2002 гг.</strong> — Гражданская война, унесшая жизни более 50 000 человек и превратившая тысячи детей в солдат.</li>
+        </ul>
+    </section>
+
+    <footer style="margin-top: 50px; text-align: center; padding: 20px; border-top: 1px solid #eee; color: #777;">
+        <p><em>Конец книги «Завтра я иду убивать» (A Long Way Gone).</em></p>
+        <p>Ишмаэль Бих благополучно добрался до Нью-Йорка, где был усыновлен Лорой Симмз. Он окончил Оберлинский колледж и стал всемирно известным правозащитником.</p>
+    </footer>
+
+</div>
+                  </p>
+
+        </section>
+<button class="read" onclick="window.location.href='glossary.html';" style="cursor:pointer;">
+    📖 Словарь терминов
+</button>
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="60.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>61/ 64</span></li>
+            <li><a class="nav-list-link" href="62.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

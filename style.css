@@ -133,3 +133,17 @@ footer {
 .title{
     text-align: center;
 }
+.read {
+    background: #1389ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+.read:hover {
+    background: #9f00fb;
+}

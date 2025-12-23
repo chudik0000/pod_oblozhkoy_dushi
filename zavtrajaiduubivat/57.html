@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Завтра я иду убивать</h1>
+            <p class="author-name">Ишмаэль Бих</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="reader-app" id="readerApp" style="font-family: 'Georgia', serif; line-height: 1.7; color: #111; max-width: 800px; margin: 0 auto;">
+
+    <div class="war-returns" style="background-color: #fff5f5; border-left: 5px solid #c0392b; padding: 25px; margin: 30px 0;">
+        <p>Повстанцы ОРФ и правительственные войска объединились. Столицу захлестнула волна беззакония. Банки взрывали гранатами, школы превратились в казармы. Я ненавидел это. <strong>Я понимал: если я снова попаду в этот водоворот, я не выживу.</strong></p>
+    </div>
+
+    <div class="food-hunt" style="border: 1px solid #ddd; padding: 25px; margin: 30px 0; background-color: #fff;">
+        <p>Город голодал. Продукты можно было достать только на «черном рынке» во дворах заброшенных домов по двойной цене. Мы с Мохамедом рискнули выйти. Я прятал лицо, боясь встретить бывших «братьев по оружию» — они бы не простили мне дезертирства.</p>
+        <p>На рынке началась бойня. Солдаты в красных повязках открыли огонь по толпе. Женщина рядом со мной упала с пулей в голове. <strong>Всё это было мне слишком знакомо. Слишком.</strong></p>
+    </div>
+
+    <div class="tear-gas-maze" style="background-color: #f4f4f4; border: 2px solid #ccc; padding: 30px; margin: 30px 0; position: relative;">
+        <h3 style="text-align: center; text-transform: uppercase; color: #333;">Дым и ярость</h3>
+        <p>Мы бежали через облака слезоточивого газа. Глаза резало, из носа текла кровь, но я мертвой хваткой вцепился в мешок с рисом. Над головами студентов завис вертолет — он опустился почти к самой земле и открыл огонь из пулеметов. Улица, только что полная протестующих, превратилась в безмолвное поле боя, усеянное телами.</p>
+        
+        <p style="font-style: italic; background: #eee; padding: 15px; border-radius: 5px;">
+            Мы пролежали в сточной канаве шесть часов. Рядом дрожали люди, впервые увидевшие войну. Мне было больно на них смотреть — их ужас был мне понятен, но мой собственный страх был другим. Это был страх человека, который знает, что <strong>пути назад больше нет.</strong>
+        </p>
+    </div>
+
+    <div class="home-sanctuary" style="border-top: 1px solid #eee; padding-top: 25px; margin-top: 40px;">
+        <p>В сумерках, пригибаясь под трассирующими пулями, мы добрались до дома. Мы принесли еду, но в глазах дяди я видел то же, что и в своих — конец надежды на мирную жизнь.</p>
+    </div>
+
+    <div class="historical-note" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.85em; color: #777;">
+        Переворот 1997 года в Сьерра-Леоне стал одним из самых кровавых этапов войны. Союз армии и повстанцев ОРФ (известный как хунта РСВС) превратил Фритаун в ад на земле на многие месяцы.
+    </div>
+
+</div>
+                  </p>
+
+        </section>
+<button class="read" onclick="window.location.href='glossary.html';" style="cursor:pointer;">
+    📖 Словарь терминов
+</button>
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="56.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>57/ 64</span></li>
+            <li><a class="nav-list-link" href="58.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  

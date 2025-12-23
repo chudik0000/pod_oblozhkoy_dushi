@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="reader-app" id="readerApp">
+        <header class="book-header">
+            <h1 id="bookTitle">Завтра я иду убивать</h1>
+            <p class="author-name">Ишмаэль Бих</p>
+        </header>
+        <section class="book-content">
+            <h2 class="title"></h2>
+            <p>  
+<div class="reader-app" id="readerApp" style="font-family: 'Georgia', serif; line-height: 1.7; color: #111; max-width: 800px; margin: 0 auto;">
+
+    <div class="uncle-death" style="background-color: #f4f4f4; border-left: 5px solid #333; padding: 25px; margin: 30px 0;">
+        <p>Дядя таял на глазах. Больницы были закрыты, врачи прятались или бежали. В тот вечер, когда он упал с кровати, я подхватил его тощее тело, и по его глазам понял — он сдался. <strong>Он умер у меня на руках</strong>, так и не успев произнести последнее слово. Тетя Саллай уронила чашку с кипятком, а я впал в оцепенение, не в силах поверить, что снова потерял всё.</p>
+        <p>Я колотил кулаками по стволу мангового дерева, пока Мохамед не оттащил меня. Мой мир снова превратился в пепел под звуки выстрелов из города.</p>
+    </div>
+
+    <div class="the-decision" style="border: 1px solid #ddd; padding: 25px; margin: 30px 0; background-color: #fff;">
+        <p>После похорон я дозвонился до Лоры в Нью-Йорк. 
+        <br>— Могу я пожить у тебя, если выберусь? — спросил я. 
+        <br>— Да, — ответила она без колебаний.
+        <br>Это было моим спасательным кругом. Я знал: остаться во Фритауне — значит либо снова взять автомат, либо погибнуть от рук бывших «братьев» за отказ служить. Я выбрал побег.</p>
+    </div>
+
+    <div class="escape-dawn" style="background-color: #001f3f; color: #fff; padding: 30px; margin: 30px 0; border-radius: 12px;">
+        <h3 style="text-align: center; color: #ffdc00; text-transform: uppercase;">31 октября 1997 года</h3>
+        <p>Я вышел из дома до рассвета, пока город спал в тумане и дыму. В воздухе стоял тяжелый запах пороха и разлагающихся тел. Я не сказал тете — она была слишком раздавлена горем. Только Мохамед знал правду.</p>
+        
+        <p style="font-style: italic; text-align: center; margin-top: 20px;">
+            Я крепко пожал руку Мохамеду. Мы оба знали, что можем никогда больше не увидеться. С одним небольшим рюкзаком я шагнул в утренний туман, навстречу границе с Гвинеей.
+        </p>
+    </div>
+
+    <div class="historical-note" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9em; color: #777;">
+        Ишмаэлю предстоит опаснейший путь через блокпосты повстанцев и солдат, где за любое подозрение могут расстрелять на месте. Его цель — Конакри, откуда открывается путь в новую жизнь.
+    </div>
+
+</div>
+                  </p>
+
+        </section>
+<button class="read" onclick="window.location.href='glossary.html';" style="cursor:pointer;">
+    📖 Словарь терминов
+</button>
+        <ul class="nav-list">
+            <li><a class="nav-list-link" href="57.html">предыдущая</a></li>
+            <li class="nav-list-numbers"><span>58/ 64</span></li>
+            <li><a class="nav-list-link" href="59.html">следуйщая</a></li>
+        </ul>
+        <footer>
+                 <a class="close-button" href="https://t.me/pod_oblozhoy_dushi">Закрыть и вернуться в
+                Telegram</a>
+            <p class="copyright">Ксения &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Код для настройки темы Telegram (светлая/темная)
+        const webApp = window.Telegram.WebApp;
+        webApp.ready();
+
+        const body = document.body;
+
+        // Устанавливаем цвет фона на основе темы Telegram
+        if (webApp.colorScheme === 'dark') {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#1c1c1d';
+            body.style.color = webApp.themeParams.text_color || '#f7f7f7';
+        } else {
+            body.style.backgroundColor = webApp.themeParams.bg_color || '#ffffff';
+            body.style.color = webApp.themeParams.text_color || '#000000';
+        }
+    </script>
+</body>  
